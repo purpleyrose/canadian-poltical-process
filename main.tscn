@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://brw0ahamk06up"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_cj687"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_cj687")
+
+[node name="RunElectionButton" type="Button" parent="."]
+offset_left = 7.0
+offset_top = -4.0
+offset_right = 111.0
+offset_bottom = 27.0
+text = "Run Election"
+
+[node name="TorontoCentreButton" type="Button" parent="."]
+offset_left = 186.0
+offset_top = 2.0
+offset_right = 413.0
+offset_bottom = 33.0
+text = "Campaign in Toronto Centre"
+
+[node name="MontrealWestButton" type="Button" parent="."]
+offset_left = 453.0
+offset_top = 6.0
+offset_right = 675.0
+offset_bottom = 37.0
+text = "Campaign in Montreal West
+"
+
+[node name="VancouverSouthButton" type="Button" parent="."]
+offset_left = 714.0
+offset_top = 10.0
+offset_right = 954.0
+offset_bottom = 41.0
+text = "Campaign in Vancouver South"
+
+[node name="AdvanceTimeButton" type="Button" parent="."]
+offset_left = 1060.0
+offset_top = 4.0
+offset_right = 1152.0
+offset_bottom = 35.0
+text = "Next Week"
+
+[node name="WeeksLabel" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 72.0
+offset_right = 69.0
+offset_bottom = 95.0
