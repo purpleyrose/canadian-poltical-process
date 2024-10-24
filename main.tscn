@@ -1,15 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://brw0ahamk06up"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_cj687"]
+[ext_resource type="Script" path="res://Main.cs" id="1_cvngp"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_cj687")
+script = ExtResource("1_cvngp")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1945.0
 offset_bottom = 1080.0
 
 [node name="MainTabs" type="TabContainer" parent="Panel"]
+layout_mode = 0
 offset_left = 57.0
 offset_top = 56.0
 offset_right = 1875.0
@@ -18,10 +19,11 @@ current_tab = 0
 
 [node name="Office" type="TabContainer" parent="Panel/MainTabs"]
 layout_mode = 2
-current_tab = 0
+current_tab = 1
 metadata/_tab_index = 0
 
 [node name="Summary" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
 custom_minimum_size = Vector2(2, 0)
 layout_mode = 2
 size_flags_stretch_ratio = 0.57
@@ -75,7 +77,6 @@ text = "Chief of Staff
 "
 
 [node name="Legislation" type="Control" parent="Panel/MainTabs/Office"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -93,33 +94,33 @@ metadata/_tab_index = 0
 [node name="VBoxNewsLegisSchoolarBoard" type="VBoxContainer" parent="Panel/MainTabs/Office/Legislation/TabContainer/News"]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.116
-anchor_bottom = 4.444
+anchor_right = 0.234
+anchor_bottom = 7.333
 offset_left = 201.0
 offset_top = 40.0
-offset_right = 875.096
-offset_bottom = 395.004
+offset_right = 967.504
+offset_bottom = 486.003
 
 [node name="VBoxNewsLegisCity" type="VBoxContainer" parent="Panel/MainTabs/Office/Legislation/TabContainer/News"]
 layout_mode = 0
-offset_left = 276.0
+offset_left = 201.0
 offset_top = 36.0
-offset_right = 936.0
-offset_bottom = 360.0
+offset_right = 1048.0
+offset_bottom = 548.0
 
 [node name="VboxNewsLegisProvince" type="VBoxContainer" parent="Panel/MainTabs/Office/Legislation/TabContainer/News"]
 layout_mode = 0
-offset_left = 235.0
-offset_top = 43.0
-offset_right = 831.0
-offset_bottom = 391.0
+offset_left = 201.0
+offset_top = 40.0
+offset_right = 1048.0
+offset_bottom = 552.0
 
 [node name="VboxLegisNewsFederal" type="VBoxContainer" parent="Panel/MainTabs/Office/Legislation/TabContainer/News"]
 layout_mode = 0
-offset_left = 235.0
+offset_left = 201.0
 offset_top = 40.0
-offset_right = 831.0
-offset_bottom = 391.0
+offset_right = 1048.0
+offset_bottom = 552.0
 
 [node name="Active Legislation" type="Control" parent="Panel/MainTabs/Office/Legislation/TabContainer"]
 layout_mode = 2
@@ -162,6 +163,56 @@ layout_mode = 2
 text = "Federal
 "
 
+[node name="CreateLegisButton" type="Button" parent="Panel/MainTabs/Office/Legislation"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = -1.0
+offset_right = 470.0
+offset_bottom = 29.0
+text = "Create Legislation
+"
+
+[node name="Button" type="Button" parent="Panel/MainTabs/Office/Legislation"]
+layout_mode = 0
+offset_left = 506.0
+offset_right = 724.0
+offset_bottom = 31.0
+text = "Edit Legislation
+"
+
+[node name="Button2" type="Button" parent="Panel/MainTabs/Office/Legislation"]
+layout_mode = 0
+offset_left = 724.0
+offset_right = 948.0
+offset_bottom = 31.0
+text = "Protoge Legislation
+"
+
+[node name="Contacts" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="Districts" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="Jobs" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="Events" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="Protoges" type="Control" parent="Panel/MainTabs/Office"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 6
+
 [node name="Campaign" type="TabContainer" parent="Panel/MainTabs"]
 visible = false
 layout_mode = 2
@@ -201,11 +252,30 @@ offset_bottom = 37.0
 text = "Name Recognition
 "
 
-[node name="PolitcalPointsLabel" type="Label" parent="Panel"]
+[node name="PoliticalPointsLabel" type="Label" parent="Panel"]
 layout_mode = 0
 offset_left = 451.0
 offset_top = 14.0
 offset_right = 636.0
 offset_bottom = 37.0
-text = "Political Points
+
+[node name="DateLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 912.0
+offset_top = 26.0
+offset_right = 1496.0
+offset_bottom = 74.0
+
+[node name="NextWeekButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.602
+anchor_top = 0.052
+anchor_right = 0.602
+anchor_bottom = 0.052
+offset_left = 494.11
+offset_top = -19.16
+offset_right = 704.11
+offset_bottom = 17.84
+text = "Next Week
 "
