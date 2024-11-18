@@ -22,7 +22,6 @@ public partial class Main : Node2D
 		PoliticalPointsLabel = GetNode<Label>("Panel/PoliticalPointsLabel");
 		PoliticalPointsLabel.Text = "Political Points: " + PoliticalPoints;
 	}
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public void _on_next_week_button_pressed()
 	{
 		CurrentWeek++;
@@ -32,8 +31,5 @@ public partial class Main : Node2D
 			CurrentYear++;
 		}
 		DateLabel.Text = "Year " + CurrentYear + ", Week " + CurrentWeek;
-	}
-	public override void _Process(double delta)
-	{
 	}
 }
