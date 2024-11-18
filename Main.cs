@@ -3,14 +3,14 @@ using System;
 
 public partial class Main : Node2D
 {
-	private const int StartingYear = 2020;
-	private const int StartingWeek = 1;
+	public const int StartingYear = 2020;
+	public const int StartingWeek = 1;
 	private Label PoliticalPointsLabel;
 	private Label DateLabel;
 	public int PoliticalPoints = 0;
-	private Button NextWeekButton;
+	public Button NextWeekButton;
 	private int CurrentWeek = StartingWeek;
-	private int CurrentYear = StartingYear;
+	public int CurrentYear = StartingYear;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{

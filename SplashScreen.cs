@@ -9,7 +9,7 @@ public partial class SplashScreen : Node2D
 	}
 	public void _on_start_game_button_pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Main.tscn"); // Change scene to Main.tscn
+		GetTree().ChangeSceneToFile("res://Descion.tscn"); // Change scene to Main.tscn
 	}
 
 	public void _on_quit_game_button_pressed()
