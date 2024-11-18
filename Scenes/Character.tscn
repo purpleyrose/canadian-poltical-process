@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c2j2lf6yk3oqq"]
+
+[node name="Character" type="Node2D"]
+
+[node name="Body" type="Sprite2D" parent="."]
+position = Vector2(480, 433)
+
+[node name="Hair" type="Sprite2D" parent="."]
+position = Vector2(305, 201)
+scale = Vector2(1, 0.981944)
+offset = Vector2(150, 0)
+
+[node name="Eyes" type="Sprite2D" parent="."]
+
+[node name="Jaw" type="Sprite2D" parent="."]
+
+[node name="Chin" type="Sprite2D" parent="."]
+
+[node name="Ears" type="Sprite2D" parent="."]
+
+[node name="Mouth" type="Sprite2D" parent="."]
+
+[node name="Acessories" type="Sprite2D" parent="."]

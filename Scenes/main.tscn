@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://brw0ahamk06up"]
 
-[ext_resource type="Script" path="res://Main.cs" id="1_cvngp"]
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_peeyf"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_cvngp")
+script = ExtResource("1_peeyf")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1945.0

@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cje7jdsbbjyeo"]
 
-[ext_resource type="Script" path="res://Descion.cs" id="1_n2o6i"]
+[ext_resource type="Script" path="res://Scripts/Descion.cs" id="1_eidml"]
 
 [node name="Descion" type="Node2D"]
-script = ExtResource("1_n2o6i")
+script = ExtResource("1_eidml")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 2104.0
