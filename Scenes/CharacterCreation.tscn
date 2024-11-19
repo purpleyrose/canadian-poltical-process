@@ -1,19 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=3 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
+[ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Background" type="Panel" parent="."]
 offset_right = 2026.0
 offset_bottom = 1245.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="CharacterPortrait" type="ColorRect" parent="Background"]
 layout_mode = 0
 offset_top = 96.0
-offset_right = 446.0
-offset_bottom = 1063.0
+offset_right = 40.0
+offset_bottom = 136.0
+scale = Vector2(9.36, 17.28)
 
 [node name="TabContainer" type="TabContainer" parent="."]
 offset_left = 446.0
@@ -26,6 +28,141 @@ clip_tabs = false
 [node name="General" type="Control" parent="TabContainer"]
 layout_mode = 2
 metadata/_tab_index = 0
+
+[node name="GeneralBox" type="Control" parent="TabContainer/General"]
+anchors_preset = 0
+offset_right = 870.0
+offset_bottom = 905.0
+script = ExtResource("2_kot0u")
+
+[node name="FirstName" type="LineEdit" parent="TabContainer/General/GeneralBox"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 269.0
+offset_bottom = 68.0
+text = "First Name:"
+
+[node name="LastName" type="LineEdit" parent="TabContainer/General/GeneralBox"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 68.0
+offset_right = 269.0
+offset_bottom = 99.0
+text = "Last Name:"
+
+[node name="GenderControl" type="Control" parent="TabContainer/General/GeneralBox"]
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 147.0
+offset_right = 570.0
+offset_bottom = 187.0
+
+[node name="Label" type="Label" parent="TabContainer/General/GeneralBox/GenderControl"]
+layout_mode = 0
+offset_right = 372.0
+offset_bottom = 23.0
+text = "Gender
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="MaleButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 55.0
+offset_right = 172.0
+offset_bottom = 79.0
+text = "Male
+"
+
+[node name="FemaleButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 55.0
+offset_right = 331.0
+offset_bottom = 86.0
+text = "Female
+"
+
+[node name="NonBinaryButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 55.0
+offset_right = 476.0
+offset_bottom = 86.0
+text = "Non-Binary
+"
+
+[node name="AgeLabel" type="Label" parent="TabContainer/General/GeneralBox"]
+layout_mode = 0
+offset_left = 532.0
+offset_top = 321.0
+offset_right = 651.0
+offset_bottom = 344.0
+text = "Age: 18"
+
+[node name="AgeSlider" type="HSlider" parent="TabContainer/General/GeneralBox"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 301.0
+offset_right = 479.0
+offset_bottom = 338.0
+min_value = 18.0
+value = 18.0
+rounded = true
+tick_count = 25
+
+[node name="PolitcalPartyControl" type="Control" parent="TabContainer/General/GeneralBox"]
+layout_mode = 1
+anchor_left = 0.028
+anchor_top = 0.355
+anchor_right = 0.074
+anchor_bottom = 0.418
+offset_left = -0.360001
+offset_top = 16.725
+offset_right = 665.62
+offset_bottom = 467.71
+
+[node name="LPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 141.0
+offset_right = 103.0
+offset_bottom = 165.0
+text = "LPC"
+
+[node name="NDPButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 141.0
+offset_right = 172.0
+offset_bottom = 165.0
+text = "NDP"
+
+[node name="CPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 141.0
+offset_right = 258.0
+offset_bottom = 165.0
+text = "CPC"
+
+[node name="GPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 141.0
+offset_right = 351.0
+offset_bottom = 165.0
+text = "GPC"
+
+[node name="PPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 141.0
+offset_right = 444.0
+offset_bottom = 165.0
+text = "PPC"
 
 [node name="Apperance" type="Control" parent="TabContainer"]
 visible = false
@@ -46,3 +183,18 @@ metadata/_tab_index = 3
 visible = false
 layout_mode = 2
 metadata/_tab_index = 4
+
+[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/MaleButton" to="TabContainer/General/GeneralBox" method="_on_male_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/FemaleButton" to="TabContainer/General/GeneralBox" method="_on_female_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/NonBinaryButton" to="TabContainer/General/GeneralBox" method="_on_non_binary_button_toggled"]
+[connection signal="value_changed" from="TabContainer/General/GeneralBox/AgeSlider" to="TabContainer/General/GeneralBox" method="_on_age_slider_value_changed"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton" to="." method="_on_lpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton" to="TabContainer/General/GeneralBox" method="_on_lpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton" to="." method="_on_ndp_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton" to="TabContainer/General/GeneralBox" method="_on_ndp_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton" to="." method="_on_cpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton" to="TabContainer/General/GeneralBox" method="_on_cpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="." method="_on_gpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="TabContainer/General/GeneralBox" method="_on_gpc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="." method="_on_ppc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="TabContainer/General/GeneralBox" method="_on_ppc_button_toggled"]

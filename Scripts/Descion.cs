@@ -9,7 +9,7 @@ public partial class Descion : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-	}
+	} 
 	public void _on_create_new_game_button_pressed()
 	{
 		GetTree().ChangeSceneToFile(CharacterCreationScenePath); // Change scene to CharacterCreation.tscn
