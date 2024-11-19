@@ -16,9 +16,10 @@ public partial class CharacterCreation : Node2D
 	private Color CPCColor = RGBToColor(100,149,237);
 	private Color GPCColor = RGBToColor(153,201,85);
 	private Color PPCColor = RGBToColor(111,93,154);
+	private Color BQColor = RGBToColor(0,0,0);
 	private Panel Background;
 	private ColorRect CharacterPortrait;
-
+	private Button ContinueButton;
 	private static Color RGBToColor(int red, int green, int blue, float alpha = 1.0f)
     {
         // Ensure the RGB values are in the valid range (0-255)
@@ -45,6 +46,8 @@ public partial class CharacterCreation : Node2D
 		Background = GetNode<Panel>("Background");
 		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortrait");
 		CharacterPortrait.Color = LPCColor;
+		ContinueButton = GetNode<Button>("ContinueButton");
+
 
     }
 	public void _on_lpc_button_toggled(bool button_pressed)
@@ -87,5 +90,11 @@ public partial class CharacterCreation : Node2D
 			CharacterPortrait.Color = PPCColor;
 		}
 	}
+	public void _on_continue_button_pressed()
+	{
+		
+		GetTree().ChangeSceneToFile("Scenes/main.tscn");
+	}
+
 
 }

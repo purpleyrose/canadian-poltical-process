@@ -37,19 +37,19 @@ script = ExtResource("2_kot0u")
 
 [node name="FirstName" type="LineEdit" parent="TabContainer/General/GeneralBox"]
 layout_mode = 0
-offset_left = 24.0
+offset_left = 62.0
 offset_top = 37.0
-offset_right = 269.0
+offset_right = 307.0
 offset_bottom = 68.0
-text = "First Name:"
+text = "First Name: "
 
 [node name="LastName" type="LineEdit" parent="TabContainer/General/GeneralBox"]
 layout_mode = 0
-offset_left = 24.0
+offset_left = 62.0
 offset_top = 68.0
-offset_right = 269.0
+offset_right = 307.0
 offset_bottom = 99.0
-text = "Last Name:"
+text = "Last Name: "
 
 [node name="GenderControl" type="Control" parent="TabContainer/General/GeneralBox"]
 anchors_preset = 0
@@ -60,7 +60,8 @@ offset_bottom = 187.0
 
 [node name="Label" type="Label" parent="TabContainer/General/GeneralBox/GenderControl"]
 layout_mode = 0
-offset_right = 372.0
+offset_left = 104.0
+offset_right = 476.0
 offset_bottom = 23.0
 text = "Gender
 "
@@ -113,6 +114,16 @@ value = 18.0
 rounded = true
 tick_count = 25
 
+[node name="Label" type="Label" parent="TabContainer/General/GeneralBox/AgeSlider"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.101
+offset_left = 132.0
+offset_top = -32.0
+offset_right = 262.004
+text = "Age"
+horizontal_alignment = 1
+
 [node name="PolitcalPartyControl" type="Control" parent="TabContainer/General/GeneralBox"]
 layout_mode = 1
 anchor_left = 0.028
@@ -120,9 +131,10 @@ anchor_top = 0.355
 anchor_right = 0.074
 anchor_bottom = 0.418
 offset_left = -0.360001
-offset_top = 16.725
+offset_top = 158.725
 offset_right = 665.62
-offset_bottom = 467.71
+offset_bottom = 609.71
+scale = Vector2(1.03018, 1)
 
 [node name="LPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
 layout_mode = 0
@@ -164,6 +176,45 @@ offset_right = 444.0
 offset_bottom = 165.0
 text = "PPC"
 
+[node name="Label" type="Label" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 100.953
+offset_top = 82.0
+offset_right = 500.953
+offset_bottom = 105.0
+text = "Politcal Party
+"
+horizontal_alignment = 1
+
+[node name="AncestarySelect" type="OptionButton" parent="TabContainer/General/GeneralBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.037
+anchor_bottom = 0.041
+offset_left = 238.0
+offset_top = 449.0
+offset_right = 371.81
+offset_bottom = 441.895
+item_count = 5
+popup/item_0/text = "European"
+popup/item_1/text = "South-East Asian"
+popup/item_1/id = 1
+popup/item_2/text = "African-Canadian"
+popup/item_2/id = 2
+popup/item_3/text = "Asian"
+popup/item_3/id = 3
+popup/item_4/text = "Indigenous Canadian"
+popup/item_4/id = 4
+
+[node name="AncestaryLabel" type="Label" parent="TabContainer/General/GeneralBox"]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 392.0
+offset_right = 404.0
+offset_bottom = 415.0
+text = "Ancestery
+"
+
 [node name="Apperance" type="Control" parent="TabContainer"]
 visible = false
 layout_mode = 2
@@ -184,6 +235,13 @@ visible = false
 layout_mode = 2
 metadata/_tab_index = 4
 
+[node name="ContinueButton" type="Button" parent="."]
+offset_left = 772.0
+offset_top = 964.0
+offset_right = 1053.0
+offset_bottom = 995.0
+text = "Continue"
+
 [connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/MaleButton" to="TabContainer/General/GeneralBox" method="_on_male_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/FemaleButton" to="TabContainer/General/GeneralBox" method="_on_female_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/NonBinaryButton" to="TabContainer/General/GeneralBox" method="_on_non_binary_button_toggled"]
@@ -198,3 +256,4 @@ metadata/_tab_index = 4
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="TabContainer/General/GeneralBox" method="_on_gpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="." method="_on_ppc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="TabContainer/General/GeneralBox" method="_on_ppc_button_toggled"]
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]

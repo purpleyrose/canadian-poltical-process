@@ -21,6 +21,7 @@ public partial class Main : Node2D
 
 		PoliticalPointsLabel = GetNode<Label>("Panel/PoliticalPointsLabel");
 		PoliticalPointsLabel.Text = "Political Points: " + PoliticalPoints;
+		
 	}
 	public void _on_next_week_button_pressed()
 	{
