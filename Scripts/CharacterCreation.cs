@@ -44,7 +44,7 @@ public partial class CharacterCreation : Node2D
 		GPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton");
 		PPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton");
 		Background = GetNode<Panel>("Background");
-		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortrait");
+		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortraitBG");
 		CharacterPortrait.Color = LPCColor;
 		ContinueButton = GetNode<Button>("ContinueButton");
 
@@ -92,7 +92,7 @@ public partial class CharacterCreation : Node2D
 	}
 	public void _on_continue_button_pressed()
 	{
-		
+
 		GetTree().ChangeSceneToFile("Scenes/main.tscn");
 	}
 

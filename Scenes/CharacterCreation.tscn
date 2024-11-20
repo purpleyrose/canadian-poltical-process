@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=4 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
+[ext_resource type="Script" path="res://Scripts/History.cs" id="3_xewqk"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -10,7 +11,7 @@ script = ExtResource("1_esh3k")
 offset_right = 2026.0
 offset_bottom = 1245.0
 
-[node name="CharacterPortrait" type="ColorRect" parent="Background"]
+[node name="CharacterPortraitBG" type="ColorRect" parent="Background"]
 layout_mode = 0
 offset_top = 96.0
 offset_right = 40.0
@@ -22,10 +23,11 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 0
+current_tab = 2
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -221,9 +223,87 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="History" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
+script = ExtResource("3_xewqk")
 metadata/_tab_index = 2
+
+[node name="AddHistoryButton" type="Button" parent="TabContainer/History"]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 37.0
+offset_right = 314.0
+offset_bottom = 68.0
+text = "Add History"
+
+[node name="HistoryListBox" type="VBoxContainer" parent="TabContainer/History"]
+layout_mode = 0
+offset_top = 76.0
+offset_right = 751.0
+offset_bottom = 652.0
+
+[node name="AddHistoryPanel" type="Panel" parent="TabContainer/History"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 99.0
+offset_right = 644.0
+offset_bottom = 514.0
+
+[node name="HistoryTitle" type="LineEdit" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 88.0
+offset_right = 353.0
+offset_bottom = 119.0
+
+[node name="HistoryTitleLabel" type="Label" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 48.0
+offset_right = 330.0
+offset_bottom = 71.0
+text = "History Title:
+"
+horizontal_alignment = 1
+
+[node name="StartYearLabel" type="Label" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 170.0
+offset_right = 330.0
+offset_bottom = 218.0
+text = "Start Year:"
+
+[node name="StartYearBox" type="SpinBox" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 202.0
+offset_right = 241.063
+offset_bottom = 233.0
+max_value = 2e+06
+
+[node name="EndYearLabel" type="Label" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 260.0
+offset_right = 316.0
+offset_bottom = 284.0
+text = "End Year"
+
+[node name="EndYearSpinBox" type="SpinBox" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 316.0
+offset_right = 241.063
+offset_bottom = 347.0
+max_value = 100000.0
+
+[node name="AddButton" type="Button" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 381.0
+offset_right = 268.0
+offset_bottom = 405.0
+text = "Add"
 
 [node name="Policy" type="Control" parent="TabContainer"]
 visible = false
@@ -256,4 +336,6 @@ text = "Continue"
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="TabContainer/General/GeneralBox" method="_on_gpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="." method="_on_ppc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="TabContainer/General/GeneralBox" method="_on_ppc_button_toggled"]
+[connection signal="pressed" from="TabContainer/History/AddHistoryButton" to="TabContainer/History" method="_on_add_history_button_pressed"]
+[connection signal="pressed" from="TabContainer/History/AddHistoryPanel/AddButton" to="TabContainer/History" method="_on_add_button_pressed"]
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
