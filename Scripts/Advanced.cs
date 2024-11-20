@@ -42,7 +42,4 @@ public partial class Advanced : Control
 			NetApprovalLabel.Text = "Net Approval Rating: " + (ApprovalSlider.Value - DisapprovalSlider.Value) ;
 		}
 	}
-
-	
-
 }

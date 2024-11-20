@@ -21,7 +21,20 @@ public partial class Main : Node2D
 
 		PoliticalPointsLabel = GetNode<Label>("Panel/PoliticalPointsLabel");
 		PoliticalPointsLabel.Text = "Political Points: " + PoliticalPoints;
-		
+		// Assuming GlobalState is a singleton set as an autoload
+		var globalState = (GameData)GetNode("/root/GameData");
+		globalState.FirstName = "Jane";
+		globalState.LastName = "Doe";
+		globalState.Age = 30;
+		globalState.PoliticalParty = "Green Party";
+		globalState.PoliticalPoints = 100;
+		globalState.InitialNameRecognition = 50;
+		globalState.NetApproval = 75;
+		globalState.Province = "Ontario";
+		globalState.CensusDivision = "Division A";
+
+		// Save the game to a file named "player_save"
+		globalState.SaveToFile("player_save");
 	}
 	public void _on_next_week_button_pressed()
 	{
@@ -33,4 +46,6 @@ public partial class Main : Node2D
 		}
 		DateLabel.Text = "Year " + CurrentYear + ", Week " + CurrentWeek;
 	}
+
+
 }

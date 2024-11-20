@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/splash_screen.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameData="*res://Scripts/GameData.cs"
+
 [display]
 
 window/size/viewport_width=1920

@@ -315,7 +315,7 @@ offset_bottom = 40.0
 icon = ExtResource("4_oss4b")
 flat = true
 
-[node name="Error Label" type="Label" parent="TabContainer/History/AddHistoryPanel"]
+[node name="ErrorLabel" type="Label" parent="TabContainer/History/AddHistoryPanel"]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 21.0
@@ -466,9 +466,9 @@ horizontal_alignment = 1
 
 [node name="NameRecognitionSpinBox" type="SpinBox" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 244.0
+offset_left = 286.0
 offset_top = 541.0
-offset_right = 372.0
+offset_right = 414.0
 offset_bottom = 578.0
 max_value = 3.97424e+07
 

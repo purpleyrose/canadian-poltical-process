@@ -2,6 +2,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 public partial class CharacterCreation : Node2D
 {
@@ -95,6 +96,4 @@ public partial class CharacterCreation : Node2D
 
 		GetTree().ChangeSceneToFile("Scenes/main.tscn");
 	}
-
-
 }
