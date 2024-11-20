@@ -33,14 +33,21 @@ public partial class History : Control
 		Label historyTitle = new Label();
 		historyTitle.Text = HistoryTitleLineEdit.Text;
 		Label historyYears = new Label();
-		if (!int.TryParse(StartYearSpinBox.Value.ToString(), out _) || !int.TryParse(EndYearSpinBox.Value.ToString(), out _))
+		if (StartYearSpinBox.Value == 0 && EndYearSpinBox.Value == 0)
 		{
-			GD.Print("Invalid year");
-			return;
+			Label ErrorLabel = new Label();
+			ErrorLabel.Text = "End year and start year must be set";
+			AddHistoryPopupPanel.AddChild(ErrorLabel);
+			return ; // Don't add history if the years are not set
 		}
 		historyYears.Text = StartYearSpinBox.Value + " - " + EndYearSpinBox.Value;
 		historyHBox.AddChild(historyTitle);
 		historyHBox.AddChild(historyYears);
 		GetNode<VBoxContainer>("HistoryListBox").AddChild(historyHBox);
+	}
+
+	public void _on_exit_button_pressed()
+	{
+		AddHistoryPopupPanel.Visible = false;
 	}
 }

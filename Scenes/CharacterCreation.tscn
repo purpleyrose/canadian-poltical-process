@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=6 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
 [ext_resource type="Script" path="res://Scripts/History.cs" id="3_xewqk"]
+[ext_resource type="Texture2D" uid="uid://3kg4nxf46r3i" path="res://Assets/exit_button.png" id="4_oss4b"]
+[ext_resource type="Script" path="res://Scripts/Advanced.cs" id="5_yhvtf"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -23,7 +25,7 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 3
+current_tab = 4
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
@@ -306,21 +308,162 @@ offset_right = 268.0
 offset_bottom = 405.0
 text = "Add"
 
+[node name="ExitButton" type="Button" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 469.0
+offset_right = 509.0
+offset_bottom = 40.0
+icon = ExtResource("4_oss4b")
+flat = true
+
 [node name="Policy" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Policy"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 4.111
 offset_top = 9.0
 offset_right = 884.0
-offset_bottom = 865.0
+offset_bottom = 828.001
 vertical_scroll_mode = 2
 
-[node name="Advanced" type="Control" parent="TabContainer"]
-visible = false
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer"]
 layout_mode = 2
+alignment = 1
+
+[node name="Advanced" type="Control" parent="TabContainer"]
+layout_mode = 2
+script = ExtResource("5_yhvtf")
 metadata/_tab_index = 4
+
+[node name="Label" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 621.0
+offset_bottom = 60.0
+text = "Advanced Options"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 99.0
+offset_right = 578.0
+offset_bottom = 136.0
+text = "Savings:"
+horizontal_alignment = 1
+
+[node name="Savings" type="SpinBox" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 170.0
+offset_right = 352.063
+offset_bottom = 201.0
+max_value = 9.22337e+18
+
+[node name="Label3" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 221.0
+offset_right = 476.0
+offset_bottom = 258.0
+text = "Inital Position:
+"
+horizontal_alignment = 1
+
+[node name="IntialPosSelect" type="OptionButton" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 269.0
+offset_right = 390.0
+offset_bottom = 301.0
+selected = 0
+item_count = 8
+popup/item_0/text = "None (Recomended)"
+popup/item_1/text = "School Board Trustee"
+popup/item_1/id = 1
+popup/item_2/text = "City Cuncillor"
+popup/item_2/id = 2
+popup/item_3/text = "Mayor"
+popup/item_3/id = 3
+popup/item_4/text = "MPP/MLA/MNA"
+popup/item_4/id = 4
+popup/item_5/text = "Premier"
+popup/item_5/id = 5
+popup/item_6/text = "MP"
+popup/item_6/id = 6
+popup/item_7/text = "Prime Minister"
+popup/item_7/id = 7
+
+[node name="Label4" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 359.0
+offset_right = 372.0
+offset_bottom = 382.0
+text = "Approval Rating"
+
+[node name="ApprovalRatingSlider" type="HSlider" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 392.0
+offset_right = 458.0
+offset_bottom = 408.0
+
+[node name="ApprovalLabel" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 392.0
+offset_right = 587.0
+offset_bottom = 415.0
+text = "Approval: "
+
+[node name="DisapprovalSlider" type="HSlider" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 415.0
+offset_right = 458.0
+offset_bottom = 431.0
+
+[node name="DisappovalLabel" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 415.0
+offset_right = 665.0
+offset_bottom = 439.0
+text = "Disapproval: "
+
+[node name="NetApprovalLabel" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 439.0
+offset_right = 479.0
+offset_bottom = 462.0
+text = "Net Approval:"
+
+[node name="Label5" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.046
+anchor_bottom = 2.556
+offset_left = 164.0
+offset_top = 480.0
+offset_right = 556.98
+offset_bottom = 479.996
+text = "Inital Name Recognition:"
+horizontal_alignment = 1
+
+[node name="NameRecognitionSpinBox" type="SpinBox" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 541.0
+offset_right = 372.0
+offset_bottom = 578.0
+max_value = 3.97424e+07
 
 [node name="ContinueButton" type="Button" parent="."]
 offset_left = 772.0
@@ -345,4 +488,7 @@ text = "Continue"
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="TabContainer/General/GeneralBox" method="_on_ppc_button_toggled"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryButton" to="TabContainer/History" method="_on_add_history_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/AddButton" to="TabContainer/History" method="_on_add_button_pressed"]
+[connection signal="pressed" from="TabContainer/History/AddHistoryPanel/ExitButton" to="TabContainer/History" method="_on_exit_button_pressed"]
+[connection signal="value_changed" from="TabContainer/Advanced/ApprovalRatingSlider" to="TabContainer/Advanced" method="_on_approval_rating_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Advanced/DisapprovalSlider" to="TabContainer/Advanced" method="_on_disapproval_slider_value_changed"]
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
