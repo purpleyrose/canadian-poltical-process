@@ -25,7 +25,7 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 4
+current_tab = 2
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
@@ -225,7 +225,6 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="History" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
 script = ExtResource("3_xewqk")
 metadata/_tab_index = 2
@@ -316,6 +315,13 @@ offset_bottom = 40.0
 icon = ExtResource("4_oss4b")
 flat = true
 
+[node name="Error Label" type="Label" parent="TabContainer/History/AddHistoryPanel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 21.0
+offset_right = 51.0
+offset_bottom = 44.0
+
 [node name="Policy" type="Control" parent="TabContainer"]
 visible = false
 layout_mode = 2
@@ -335,6 +341,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Advanced" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 script = ExtResource("5_yhvtf")
 metadata/_tab_index = 4
