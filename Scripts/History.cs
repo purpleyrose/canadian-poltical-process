@@ -33,6 +33,11 @@ public partial class History : Control
 		Label historyTitle = new Label();
 		historyTitle.Text = HistoryTitleLineEdit.Text;
 		Label historyYears = new Label();
+		if (!int.TryParse(StartYearSpinBox.Value.ToString(), out _) || !int.TryParse(EndYearSpinBox.Value.ToString(), out _))
+		{
+			GD.Print("Invalid year");
+			return;
+		}
 		historyYears.Text = StartYearSpinBox.Value + " - " + EndYearSpinBox.Value;
 		historyHBox.AddChild(historyTitle);
 		historyHBox.AddChild(historyYears);
