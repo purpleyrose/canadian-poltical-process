@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dk80b18w6qxpc"]
+
+[node name="SelectLocation" type="Node2D"]

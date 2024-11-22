@@ -7,11 +7,11 @@ using System.Security.Cryptography.X509Certificates;
 public partial class CharacterCreation : Node2D
 {
 	
-	private CheckButton LPCButton;
-	private CheckButton NDPButton;
-	private CheckButton CPCButton;
-	private CheckButton GPCButton;
-	private CheckButton PPCButton;
+	private CheckBox LPCButton;
+	private CheckBox NDPButton;
+	private CheckBox CPCButton;
+	private CheckBox GPCButton;
+	private CheckBox PPCButton;
 	private Color LPCColor = RGBToColor(234,109,106);
 	private Color NDPColor = RGBToColor(244,164,96);
 	private Color CPCColor = RGBToColor(100,149,237);
@@ -38,12 +38,12 @@ public partial class CharacterCreation : Node2D
     }
     public override void _Ready()
     {
-        LPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton");
+        LPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton");
 		LPCButton.SetPressedNoSignal(true);
-		NDPButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton");
-		CPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton");
-		GPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton");
-		PPCButton = GetNode<CheckButton>("TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton");
+		NDPButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton");
+		CPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton");
+		GPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton");
+		PPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton");
 		Background = GetNode<Panel>("Background");
 		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortraitBG");
 		CharacterPortrait.Color = LPCColor;
@@ -94,6 +94,6 @@ public partial class CharacterCreation : Node2D
 	public void _on_continue_button_pressed()
 	{
 
-		GetTree().ChangeSceneToFile("Scenes/main.tscn");
+		GetTree().ChangeSceneToFile("res://Scenes/SelectLocation.tscn");
 	}
 }

@@ -1,10 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=21 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
+[ext_resource type="ButtonGroup" uid="uid://b7apc3eejaj14" path="res://Assets/Groups/GeneralBoxGroups/Genders.tres" id="3_sshh3"]
 [ext_resource type="Script" path="res://Scripts/History.cs" id="3_xewqk"]
+[ext_resource type="ButtonGroup" uid="uid://df7jsv8cwwvpm" path="res://Assets/Groups/GeneralBoxGroups/PolitcalParties.tres" id="4_jv57k"]
 [ext_resource type="Texture2D" uid="uid://3kg4nxf46r3i" path="res://Assets/exit_button.png" id="4_oss4b"]
+[ext_resource type="ButtonGroup" uid="uid://ui8tkypxhuy6" path="res://Assets/Groups/PolicyGroups/MinimumWageGroup.tres" id="5_gpnnq"]
 [ext_resource type="Script" path="res://Scripts/Advanced.cs" id="5_yhvtf"]
+[ext_resource type="ButtonGroup" uid="uid://nsn0gb7iw8xp" path="res://Assets/Groups/PolicyGroups/UnionFundingButtonGroup.tres" id="6_mbftt"]
+[ext_resource type="ButtonGroup" uid="uid://dfou6bmr1fptl" path="res://Assets/Groups/PolicyGroups/RightToWork.tres" id="7_rd6pm"]
+[ext_resource type="ButtonGroup" uid="uid://wvsjriou21ko" path="res://Assets/Groups/PolicyGroups/UBI.tres" id="8_ps10p"]
+[ext_resource type="ButtonGroup" uid="uid://bmjr578lahg5k" path="res://Assets/Groups/PolicyGroups/CorperateTax.tres" id="9_6ahp8"]
+[ext_resource type="ButtonGroup" uid="uid://dcfv6sexxkisp" path="res://Assets/Groups/PolicyGroups/SmallBuisness.tres" id="10_wcpuv"]
+[ext_resource type="ButtonGroup" uid="uid://dg5atmbfk2e" path="res://Assets/Groups/PolicyGroups/PublicOwnership.tres" id="11_po6av"]
+[ext_resource type="ButtonGroup" uid="uid://dxsoer400dan4" path="res://Assets/Groups/PolicyGroups/WealthyTaxCuts.tres" id="13_hpxpa"]
+[ext_resource type="ButtonGroup" uid="uid://bt0h4v0rld41d" path="res://Assets/Groups/PolicyGroups/WealthTax.tres" id="14_ftdjk"]
+[ext_resource type="ButtonGroup" uid="uid://bviulibu7v18o" path="res://Assets/Groups/PolicyGroups/Deregulation.tres" id="15_yybdk"]
+[ext_resource type="ButtonGroup" uid="uid://cj6ncwi8xdd15" path="res://Assets/Groups/PolicyGroups/TransactionTax.tres" id="16_8dch5"]
+[ext_resource type="ButtonGroup" uid="uid://dn07o3blyw356" path="res://Assets/Groups/PolicyGroups/CarbonTax.tres" id="17_ryh5w"]
+[ext_resource type="ButtonGroup" uid="uid://dar67ss88bfay" path="res://Assets/Groups/PolicyGroups/FreeTrade.tres" id="18_tqgfc"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -25,11 +40,10 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 2
+current_tab = 0
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -72,30 +86,34 @@ text = "Gender
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="MaleButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
+[node name="MaleButton" type="CheckBox" parent="TabContainer/General/GeneralBox/GenderControl"]
 layout_mode = 0
-offset_left = 128.0
-offset_top = 55.0
-offset_right = 172.0
-offset_bottom = 79.0
-text = "Male
-"
+offset_left = 155.0
+offset_top = 40.0
+offset_right = 221.0
+offset_bottom = 71.0
+button_group = ExtResource("3_sshh3")
+text = "Male"
 
-[node name="FemaleButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
-layout_mode = 0
+[node name="FemaleButton" type="CheckBox" parent="TabContainer/General/GeneralBox/GenderControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.07
+anchor_bottom = 1.0
 offset_left = 245.0
-offset_top = 55.0
-offset_right = 331.0
-offset_bottom = 86.0
-text = "Female
-"
+offset_top = 40.0
+offset_right = 290.78
+offset_bottom = 31.0
+button_group = ExtResource("3_sshh3")
+text = "Female"
 
-[node name="NonBinaryButton" type="CheckButton" parent="TabContainer/General/GeneralBox/GenderControl"]
+[node name="NonBinaryButton" type="CheckBox" parent="TabContainer/General/GeneralBox/GenderControl"]
 layout_mode = 0
-offset_left = 372.0
-offset_top = 55.0
-offset_right = 476.0
-offset_bottom = 86.0
+offset_left = 399.0
+offset_top = 40.0
+offset_right = 515.0
+offset_bottom = 71.0
+button_group = ExtResource("3_sshh3")
 text = "Non-Binary
 "
 
@@ -140,46 +158,6 @@ offset_right = 665.62
 offset_bottom = 609.71
 scale = Vector2(1.03018, 1)
 
-[node name="LPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
-layout_mode = 0
-offset_left = 59.0
-offset_top = 141.0
-offset_right = 103.0
-offset_bottom = 165.0
-text = "LPC"
-
-[node name="NDPButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
-layout_mode = 0
-offset_left = 128.0
-offset_top = 141.0
-offset_right = 172.0
-offset_bottom = 165.0
-text = "NDP"
-
-[node name="CPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
-layout_mode = 0
-offset_left = 214.0
-offset_top = 141.0
-offset_right = 258.0
-offset_bottom = 165.0
-text = "CPC"
-
-[node name="GPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
-layout_mode = 0
-offset_left = 307.0
-offset_top = 141.0
-offset_right = 351.0
-offset_bottom = 165.0
-text = "GPC"
-
-[node name="PPCButton" type="CheckButton" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
-layout_mode = 0
-offset_left = 400.0
-offset_top = 141.0
-offset_right = 444.0
-offset_bottom = 165.0
-text = "PPC"
-
 [node name="Label" type="Label" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
 layout_mode = 0
 offset_left = 100.953
@@ -189,6 +167,51 @@ offset_bottom = 105.0
 text = "Politcal Party
 "
 horizontal_alignment = 1
+
+[node name="LPCButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 100.953
+offset_top = 124.0
+offset_right = 157.953
+offset_bottom = 155.0
+button_group = ExtResource("4_jv57k")
+text = "LPC"
+
+[node name="NDPButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 207.731
+offset_top = 124.0
+offset_right = 270.731
+offset_bottom = 155.0
+button_group = ExtResource("4_jv57k")
+text = "NDP"
+
+[node name="CPCButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 293.153
+offset_top = 124.0
+offset_right = 352.153
+offset_bottom = 155.0
+button_group = ExtResource("4_jv57k")
+text = "CPC"
+
+[node name="GPCButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 407.696
+offset_top = 124.0
+offset_right = 467.696
+offset_bottom = 155.0
+button_group = ExtResource("4_jv57k")
+text = "GPC"
+
+[node name="PPCButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 0
+offset_left = 509.62
+offset_top = 124.0
+offset_right = 567.62
+offset_bottom = 155.0
+button_group = ExtResource("4_jv57k")
+text = "PPC"
 
 [node name="AncestarySelect" type="OptionButton" parent="TabContainer/General/GeneralBox"]
 layout_mode = 1
@@ -225,6 +248,7 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="History" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 script = ExtResource("3_xewqk")
 metadata/_tab_index = 2
@@ -334,11 +358,390 @@ anchor_bottom = 4.111
 offset_top = 9.0
 offset_right = 884.0
 offset_bottom = 828.001
+follow_focus = true
+scroll_vertical_custom_step = 10.0
 vertical_scroll_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer"]
+[node name="PolicyBox" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer"]
+custom_minimum_size = Vector2(0, 2000)
 layout_mode = 2
-alignment = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = -20
+alignment = 2
+
+[node name="PolicyLabel" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+size_flags_vertical = 2
+text = "Policy
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Blurb" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+custom_minimum_size = Vector2(30, 40)
+layout_mode = 2
+size_flags_vertical = 2
+text = "Policies represent your position on every type of political issue. They are used during election campaigns and tell the voters where you stand on each issue. If the voters disagree with your policies, they will be less likely to vote for you. Policies can be changed at any time during an election campaign from the policy tab in the election campaign menu. Your policies at the start of the game determine your initial approval rating (which impacts elections), so do not skip selecting your policies.
+Note: Each policy has a different impact on how voters decide to vote. Some policies are more important than others. To view the impact that each policy has on a voter's decision, click on the 'View Policy Impact' Button."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PolicyPresetsPanel" type="Panel" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="PresetButtonContainer" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = -270.0
+offset_right = 894.0
+offset_bottom = -230.0
+
+[node name="PolicyPresets" type="Button" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel/PresetButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 50
+text = "Select Policy Presets"
+
+[node name="PolicyImpact" type="Button" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel/PresetButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "See Policy Impact
+"
+
+[node name="EconomicPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="EconomicPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+text = "Economic Policy"
+horizontal_alignment = 1
+
+[node name="MinimumWage" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MinimumQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/MinimumWage"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support raising the minimum wage?"
+horizontal_alignment = 1
+
+[node name="MinimumWageOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/MinimumWage"]
+layout_mode = 2
+
+[node name="YesCheckButtonMinimumWage" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/MinimumWage/MinimumWageOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("5_gpnnq")
+text = "Yes"
+
+[node name="NoCheckBoxMinimumWage" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/MinimumWage/MinimumWageOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("5_gpnnq")
+text = "No"
+
+[node name="UnionFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="UnionFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UnionFunding"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support direct funding for unions?"
+horizontal_alignment = 1
+
+[node name="UnionFundingOptions2" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UnionFunding"]
+layout_mode = 2
+
+[node name="YesCheckButtonUnionFunding" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UnionFunding/UnionFundingOptions2"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("6_mbftt")
+text = "Yes"
+
+[node name="NoCheckBoxUnionFunding" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UnionFunding/UnionFundingOptions2"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("6_mbftt")
+text = "No"
+
+[node name="RightToWork" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightToWorkQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/RightToWork"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support right to work legislation?"
+horizontal_alignment = 1
+
+[node name="RightToWorkOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/RightToWork"]
+layout_mode = 2
+
+[node name="YesCheckButtonRightToWork" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/RightToWork/RightToWorkOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("7_rd6pm")
+text = "Yes"
+
+[node name="NoCheckBoxRightToWork" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/RightToWork/RightToWorkOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("7_rd6pm")
+text = "No"
+
+[node name="UBI" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="UBIQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UBI"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a universal basic income?"
+horizontal_alignment = 1
+
+[node name="UBIOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UBI"]
+layout_mode = 2
+
+[node name="YesCheckButtonUBI" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UBI/UBIOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("8_ps10p")
+text = "Yes"
+
+[node name="NoCheckBoxUBI" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/UBI/UBIOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("8_ps10p")
+text = "No"
+
+[node name="CorperateTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CorperateTaxQuestionQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support increasing taxes on corporations?"
+horizontal_alignment = 1
+
+[node name="CorperateTaxOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax"]
+layout_mode = 2
+
+[node name="YesCheckButtonCorperateTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax/CorperateTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("9_6ahp8")
+text = "Yes"
+
+[node name="NoCheckBoxCorperateTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax/CorperateTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("9_6ahp8")
+text = "No"
+
+[node name="SmallBuisnessSubsidies" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SmallBuisnessSubsidiesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/SmallBuisnessSubsidies"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support providing subsidies for small buisnesses?"
+horizontal_alignment = 1
+
+[node name="SmallBuisnessSubsidiesOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/SmallBuisnessSubsidies"]
+layout_mode = 2
+
+[node name="YesCheckButtonSmallBuisnessSubsidies" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/SmallBuisnessSubsidies/SmallBuisnessSubsidiesOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("10_wcpuv")
+text = "Yes"
+
+[node name="NoCheckBoxSmallBuisnessSubsidies" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/SmallBuisnessSubsidies/SmallBuisnessSubsidiesOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("10_wcpuv")
+text = "No"
+
+[node name="PublicOwnershipOfMajorIndustries" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PublicOwnershipOfMajorIndustriesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/PublicOwnershipOfMajorIndustries"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support public ownership of major industries?"
+horizontal_alignment = 1
+
+[node name="PublicOwnershipOfMajorIndustriesOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/PublicOwnershipOfMajorIndustries"]
+layout_mode = 2
+
+[node name="YesCheckButtonPublicOwnershipOfMajorIndustries" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/PublicOwnershipOfMajorIndustries/PublicOwnershipOfMajorIndustriesOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("11_po6av")
+text = "Yes"
+
+[node name="NoCheckBoxPublicOwnershipOfMajorIndustries" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/PublicOwnershipOfMajorIndustries/PublicOwnershipOfMajorIndustriesOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("11_po6av")
+text = "No"
+
+[node name="WealthyTaxCuts" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="WealthyTaxCutsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthyTaxCuts"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support tax cuts for the wealthy?"
+horizontal_alignment = 1
+
+[node name="WealthyTaxCutsOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthyTaxCuts"]
+layout_mode = 2
+
+[node name="YesCheckButtonWealthyTaxCuts" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthyTaxCuts/WealthyTaxCutsOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("13_hpxpa")
+text = "Yes"
+
+[node name="NoCheckBoxWealthyTaxCuts" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthyTaxCuts/WealthyTaxCutsOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("13_hpxpa")
+text = "No"
+
+[node name="WealthTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="WealthTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a wealth tax?"
+horizontal_alignment = 1
+
+[node name="WealthTaxOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthTax"]
+layout_mode = 2
+
+[node name="YesCheckButtonWealthTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthTax/WealthTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("14_ftdjk")
+text = "Yes"
+
+[node name="NoCheckBoxWealthTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/WealthTax/WealthTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("14_ftdjk")
+text = "No"
+
+[node name="Deregulation" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DeregulationQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/Deregulation"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support the deregulation of the markets?"
+horizontal_alignment = 1
+
+[node name="DeregulationOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/Deregulation"]
+layout_mode = 2
+
+[node name="YesCheckButtonDeregulation" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/Deregulation/DeregulationOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("15_yybdk")
+text = "Yes"
+
+[node name="NoCheckBoxDeregulation" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/Deregulation/DeregulationOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("15_yybdk")
+text = "No"
+
+[node name="TransactionTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TransactionTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/TransactionTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a finacial transaction tax?"
+horizontal_alignment = 1
+
+[node name="TransactionTaxOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/TransactionTax"]
+layout_mode = 2
+
+[node name="YesCheckButtonTransactionTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/TransactionTax/TransactionTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("16_8dch5")
+text = "Yes"
+
+[node name="NoCheckBoxTransactionTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/TransactionTax/TransactionTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("16_8dch5")
+text = "No"
+
+[node name="CarbonTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CarbonTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CarbonTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a carbon tax?"
+horizontal_alignment = 1
+
+[node name="CarbonTaxOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CarbonTax"]
+layout_mode = 2
+
+[node name="YesCheckButtonCarbonTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CarbonTax/CarbonTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("17_ryh5w")
+text = "Yes"
+
+[node name="NoCheckBoxCarbonTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CarbonTax/CarbonTaxOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("17_ryh5w")
+text = "No"
+
+[node name="FreeTrade" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FreeTradeQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/FreeTrade"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a free trade agreement?"
+horizontal_alignment = 1
+
+[node name="FreeTradeOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/FreeTrade"]
+layout_mode = 2
+
+[node name="YesCheckButtonFreeTrade" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/FreeTrade/FreeTradeOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("18_tqgfc")
+text = "Yes"
+
+[node name="NoCheckBoxFreeTrade" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/FreeTrade/FreeTradeOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("18_tqgfc")
+text = "No"
 
 [node name="Advanced" type="Control" parent="TabContainer"]
 visible = false
@@ -357,27 +760,27 @@ horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 48.0
 offset_top = 99.0
-offset_right = 578.0
+offset_right = 618.0
 offset_bottom = 136.0
 text = "Savings:"
 horizontal_alignment = 1
 
 [node name="Savings" type="SpinBox" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 269.0
-offset_top = 170.0
-offset_right = 352.063
-offset_bottom = 201.0
+offset_left = 286.0
+offset_top = 156.0
+offset_right = 369.063
+offset_bottom = 187.0
 max_value = 9.22337e+18
 
 [node name="Label3" type="Label" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 221.0
-offset_right = 476.0
-offset_bottom = 258.0
+offset_left = 179.0
+offset_top = 218.0
+offset_right = 493.0
+offset_bottom = 255.0
 text = "Inital Position:
 "
 horizontal_alignment = 1
@@ -406,70 +809,24 @@ popup/item_6/id = 6
 popup/item_7/text = "Prime Minister"
 popup/item_7/id = 7
 
-[node name="Label4" type="Label" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 244.0
-offset_top = 359.0
-offset_right = 372.0
-offset_bottom = 382.0
-text = "Approval Rating"
-
-[node name="ApprovalRatingSlider" type="HSlider" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 189.0
-offset_top = 392.0
-offset_right = 458.0
-offset_bottom = 408.0
-
-[node name="ApprovalLabel" type="Label" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 481.0
-offset_top = 392.0
-offset_right = 587.0
-offset_bottom = 415.0
-text = "Approval: "
-
-[node name="DisapprovalSlider" type="HSlider" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 189.0
-offset_top = 415.0
-offset_right = 458.0
-offset_bottom = 431.0
-
-[node name="DisappovalLabel" type="Label" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 476.0
-offset_top = 415.0
-offset_right = 665.0
-offset_bottom = 439.0
-text = "Disapproval: "
-
-[node name="NetApprovalLabel" type="Label" parent="TabContainer/Advanced"]
-layout_mode = 0
-offset_left = 189.0
-offset_top = 439.0
-offset_right = 479.0
-offset_bottom = 462.0
-text = "Net Approval:"
-
 [node name="Label5" type="Label" parent="TabContainer/Advanced"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.046
 anchor_bottom = 2.556
-offset_left = 164.0
-offset_top = 480.0
-offset_right = 556.98
-offset_bottom = 479.996
+offset_left = 116.0
+offset_top = 359.0
+offset_right = 508.98
+offset_bottom = 358.996
 text = "Inital Name Recognition:"
 horizontal_alignment = 1
 
 [node name="NameRecognitionSpinBox" type="SpinBox" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 286.0
-offset_top = 541.0
-offset_right = 414.0
-offset_bottom = 578.0
+offset_left = 269.0
+offset_top = 418.0
+offset_right = 397.0
+offset_bottom = 455.0
 max_value = 3.97424e+07
 
 [node name="ContinueButton" type="Button" parent="."]
@@ -479,23 +836,13 @@ offset_right = 1053.0
 offset_bottom = 995.0
 text = "Continue"
 
-[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/MaleButton" to="TabContainer/General/GeneralBox" method="_on_male_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/FemaleButton" to="TabContainer/General/GeneralBox" method="_on_female_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/GenderControl/NonBinaryButton" to="TabContainer/General/GeneralBox" method="_on_non_binary_button_toggled"]
 [connection signal="value_changed" from="TabContainer/General/GeneralBox/AgeSlider" to="TabContainer/General/GeneralBox" method="_on_age_slider_value_changed"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton" to="." method="_on_lpc_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton" to="TabContainer/General/GeneralBox" method="_on_lpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton" to="." method="_on_ndp_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/NDPButton" to="TabContainer/General/GeneralBox" method="_on_ndp_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton" to="." method="_on_cpc_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton" to="TabContainer/General/GeneralBox" method="_on_cpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="." method="_on_gpc_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="TabContainer/General/GeneralBox" method="_on_gpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="." method="_on_ppc_button_toggled"]
-[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="TabContainer/General/GeneralBox" method="_on_ppc_button_toggled"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryButton" to="TabContainer/History" method="_on_add_history_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/AddButton" to="TabContainer/History" method="_on_add_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/ExitButton" to="TabContainer/History" method="_on_exit_button_pressed"]
-[connection signal="value_changed" from="TabContainer/Advanced/ApprovalRatingSlider" to="TabContainer/Advanced" method="_on_approval_rating_slider_value_changed"]
-[connection signal="value_changed" from="TabContainer/Advanced/DisapprovalSlider" to="TabContainer/Advanced" method="_on_disapproval_slider_value_changed"]
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
