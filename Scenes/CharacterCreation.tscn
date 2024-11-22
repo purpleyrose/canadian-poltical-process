@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=22 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
@@ -20,6 +20,7 @@
 [ext_resource type="ButtonGroup" uid="uid://cj6ncwi8xdd15" path="res://Assets/Groups/PolicyGroups/TransactionTax.tres" id="16_8dch5"]
 [ext_resource type="ButtonGroup" uid="uid://dn07o3blyw356" path="res://Assets/Groups/PolicyGroups/CarbonTax.tres" id="17_ryh5w"]
 [ext_resource type="ButtonGroup" uid="uid://dar67ss88bfay" path="res://Assets/Groups/PolicyGroups/FreeTrade.tres" id="18_tqgfc"]
+[ext_resource type="Script" path="res://Scenes/FpsCounter.cs" id="21_q3qxb"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -352,6 +353,7 @@ layout_mode = 2
 metadata/_tab_index = 3
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Policy"]
+custom_minimum_size = Vector2(1, 1)
 layout_mode = 1
 anchors_preset = -1
 anchor_bottom = 4.111
@@ -835,6 +837,13 @@ offset_top = 964.0
 offset_right = 1053.0
 offset_bottom = 995.0
 text = "Continue"
+
+[node name="FPSCounter" type="Label" parent="."]
+offset_left = 1542.0
+offset_top = 28.0
+offset_right = 1582.0
+offset_bottom = 51.0
+script = ExtResource("21_q3qxb")
 
 [connection signal="value_changed" from="TabContainer/General/GeneralBox/AgeSlider" to="TabContainer/General/GeneralBox" method="_on_age_slider_value_changed"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/LPCButton" to="." method="_on_lpc_button_toggled"]
