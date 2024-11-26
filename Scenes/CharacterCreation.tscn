@@ -41,10 +41,11 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 0
+current_tab = 3
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -348,7 +349,6 @@ offset_right = 51.0
 offset_bottom = 44.0
 
 [node name="Policy" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
@@ -369,7 +369,7 @@ custom_minimum_size = Vector2(0, 2000)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_constants/separation = -20
+theme_override_constants/separation = 19
 alignment = 2
 
 [node name="PolicyLabel" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
@@ -380,24 +380,15 @@ text = "Policy
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Blurb" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
-custom_minimum_size = Vector2(30, 40)
-layout_mode = 2
-size_flags_vertical = 2
-text = "Policies represent your position on every type of political issue. They are used during election campaigns and tell the voters where you stand on each issue. If the voters disagree with your policies, they will be less likely to vote for you. Policies can be changed at any time during an election campaign from the policy tab in the election campaign menu. Your policies at the start of the game determine your initial approval rating (which impacts elections), so do not skip selecting your policies.
-Note: Each policy has a different impact on how voters decide to vote. Some policies are more important than others. To view the impact that each policy has on a voter's decision, click on the 'View Policy Impact' Button."
-horizontal_alignment = 1
-autowrap_mode = 3
-
 [node name="PolicyPresetsPanel" type="Panel" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
 [node name="PresetButtonContainer" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel"]
 layout_mode = 0
 offset_left = 24.0
-offset_top = -270.0
+offset_top = -89.0
 offset_right = 894.0
-offset_bottom = -230.0
+offset_bottom = -49.0
 
 [node name="PolicyPresets" type="Button" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel/PresetButtonContainer"]
 layout_mode = 2
@@ -722,7 +713,8 @@ text = "No"
 
 [node name="FreeTrade" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 6
+theme_override_constants/separation = 14
 
 [node name="FreeTradeQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/FreeTrade"]
 layout_mode = 2
@@ -743,6 +735,1831 @@ text = "Yes"
 layout_mode = 2
 size_flags_horizontal = 6
 button_group = ExtResource("18_tqgfc")
+text = "No"
+
+[node name="HealthCarePolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="EducationPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EducationHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+text = "Education Policy"
+horizontal_alignment = 1
+
+[node name="FreeUniversityTuition" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+
+[node name="FreeUniversityQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FreeUniversityTuition"]
+layout_mode = 2
+text = "Do you support free tuition to university?"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="EnviromentPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="SocialPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="JusticePolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="ImmigrationPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="InfrastructurePolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="ForeignPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="TechPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="TaxPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+
+[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+theme_override_constants/line_spacing = 35
+text = "Healthcare"
+horizontal_alignment = 1
+
+[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "No"
+
+[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal healthcare?"
+horizontal_alignment = 1
+
+[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9"]
+layout_mode = 2
+
+[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Yes"
+
+[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+layout_mode = 2
+size_flags_horizontal = 6
 text = "No"
 
 [node name="Advanced" type="Control" parent="TabContainer"]
