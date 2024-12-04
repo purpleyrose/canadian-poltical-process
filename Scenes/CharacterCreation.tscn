@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=104 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
@@ -11,7 +11,6 @@
 [ext_resource type="ButtonGroup" uid="uid://nsn0gb7iw8xp" path="res://Assets/Groups/PolicyGroups/UnionFundingButtonGroup.tres" id="6_mbftt"]
 [ext_resource type="ButtonGroup" uid="uid://dfou6bmr1fptl" path="res://Assets/Groups/PolicyGroups/RightToWork.tres" id="7_rd6pm"]
 [ext_resource type="ButtonGroup" uid="uid://wvsjriou21ko" path="res://Assets/Groups/PolicyGroups/UBI.tres" id="8_ps10p"]
-[ext_resource type="ButtonGroup" uid="uid://bmjr578lahg5k" path="res://Assets/Groups/PolicyGroups/CorperateTax.tres" id="9_6ahp8"]
 [ext_resource type="ButtonGroup" uid="uid://dcfv6sexxkisp" path="res://Assets/Groups/PolicyGroups/SmallBuisness.tres" id="10_wcpuv"]
 [ext_resource type="ButtonGroup" uid="uid://dg5atmbfk2e" path="res://Assets/Groups/PolicyGroups/PublicOwnership.tres" id="11_po6av"]
 [ext_resource type="ButtonGroup" uid="uid://dxsoer400dan4" path="res://Assets/Groups/PolicyGroups/WealthyTaxCuts.tres" id="13_hpxpa"]
@@ -20,7 +19,90 @@
 [ext_resource type="ButtonGroup" uid="uid://cj6ncwi8xdd15" path="res://Assets/Groups/PolicyGroups/TransactionTax.tres" id="16_8dch5"]
 [ext_resource type="ButtonGroup" uid="uid://dn07o3blyw356" path="res://Assets/Groups/PolicyGroups/CarbonTax.tres" id="17_ryh5w"]
 [ext_resource type="ButtonGroup" uid="uid://dar67ss88bfay" path="res://Assets/Groups/PolicyGroups/FreeTrade.tres" id="18_tqgfc"]
+[ext_resource type="ButtonGroup" uid="uid://bd5abqbxyvpr8" path="res://Assets/Groups/PolicyGroups/PharmaCare.tres" id="20_b3rhb"]
+[ext_resource type="ButtonGroup" uid="uid://clbmydlq2xo7h" path="res://Assets/Groups/PolicyGroups/FreeMentalHealth.tres" id="21_5d2w0"]
 [ext_resource type="Script" path="res://Scenes/FpsCounter.cs" id="21_q3qxb"]
+[ext_resource type="ButtonGroup" uid="uid://bcq4h7oqaixr6" path="res://Assets/Groups/PolicyGroups/RareDesease.tres" id="22_mrwul"]
+[ext_resource type="ButtonGroup" uid="uid://djljy24bqr1ya" path="res://Assets/Groups/PolicyGroups/DrugDecrim.tres" id="23_1uhst"]
+[ext_resource type="ButtonGroup" uid="uid://busetayfsd6fy" path="res://Assets/Groups/PolicyGroups/DrugPriceCaps.tres" id="24_528wb"]
+[ext_resource type="ButtonGroup" uid="uid://xe6gw1eaegk8" path="res://Assets/Groups/PolicyGroups/LongTermCare.tres" id="25_vsapb"]
+[ext_resource type="ButtonGroup" uid="uid://c5gsnl0vnu6mq" path="res://Assets/Groups/PolicyGroups/UniversalHealthCare.tres" id="26_8pp5m"]
+[ext_resource type="ButtonGroup" uid="uid://bm81dexfrxeal" path="res://Assets/Groups/PolicyGroups/FreeUniversity.tres" id="27_xyuti"]
+[ext_resource type="ButtonGroup" uid="uid://pqtlmm4ak30h" path="res://Assets/Groups/PolicyGroups/PublicSchoolFunding.tres" id="28_c6v6g"]
+[ext_resource type="ButtonGroup" uid="uid://3qypr6q2vs0w" path="res://Assets/Groups/PolicyGroups/SchoolVouchers.tres" id="29_4mjv1"]
+[ext_resource type="ButtonGroup" uid="uid://ckgdpyghh7qoj" path="res://Assets/Groups/PolicyGroups/StudentLoanElim.tres" id="30_m7vf4"]
+[ext_resource type="ButtonGroup" uid="uid://dedn33us732rx" path="res://Assets/Groups/PolicyGroups/NationalCurriculum.tres" id="31_5shrt"]
+[ext_resource type="ButtonGroup" uid="uid://dy8751ddgi0ug" path="res://Assets/Groups/PolicyGroups/TeacherSalary.tres" id="32_6dn81"]
+[ext_resource type="ButtonGroup" uid="uid://bp3otcfph6s3v" path="res://Assets/Groups/PolicyGroups/FinancialLiteracyCourses.tres" id="33_f8ofb"]
+[ext_resource type="ButtonGroup" uid="uid://d256vlujdjnrv" path="res://Assets/Groups/PolicyGroups/STEMFunding.tres" id="34_v3wqw"]
+[ext_resource type="ButtonGroup" uid="uid://dbpysb225k5lt" path="res://Assets/Groups/PolicyGroups/PrivateSchoolBan.tres" id="35_gox4a"]
+[ext_resource type="ButtonGroup" uid="uid://c7fb6ll0sp7j6" path="res://Assets/Groups/PolicyGroups/SingleUsePlastics.tres" id="36_xr7ui"]
+[ext_resource type="ButtonGroup" uid="uid://br8apngv4a2cn" path="res://Assets/Groups/PolicyGroups/RenewableEnergy.tres" id="37_lx32b"]
+[ext_resource type="ButtonGroup" uid="uid://txl6uixp86nv" path="res://Assets/Groups/PolicyGroups/FossileFuelPhaseout.tres" id="38_l8uvh"]
+[ext_resource type="ButtonGroup" uid="uid://cl5ujv0tx2tp8" path="res://Assets/Groups/PolicyGroups/NationalParkExpansion.tres" id="39_uo45b"]
+[ext_resource type="ButtonGroup" uid="uid://n0g3as4iy8wr" path="res://Assets/Groups/PolicyGroups/2050Carbon.tres" id="40_du00i"]
+[ext_resource type="ButtonGroup" uid="uid://kawsm1aea8b" path="res://Assets/Groups/PolicyGroups/EVSubsidies.tres" id="41_sx2jb"]
+[ext_resource type="ButtonGroup" uid="uid://dpsfv350obpi1" path="res://Assets/Groups/PolicyGroups/PolutionRegs.tres" id="42_03u6w"]
+[ext_resource type="ButtonGroup" uid="uid://dwykwejk5vorh" path="res://Assets/Groups/PolicyGroups/NuclearEnergy.tres" id="43_vv7p2"]
+[ext_resource type="ButtonGroup" uid="uid://bkt2k23agettl" path="res://Assets/Groups/PolicyGroups/FrackingBan.tres" id="44_x4w3q"]
+[ext_resource type="ButtonGroup" uid="uid://b4jvjd35wbq05" path="res://Assets/Groups/PolicyGroups/UniversalChildCare.tres" id="45_fr3pp"]
+[ext_resource type="ButtonGroup" uid="uid://c6lmga0ry8vc3" path="res://Assets/Groups/PolicyGroups/GunControl.tres" id="46_bhqtp"]
+[ext_resource type="ButtonGroup" uid="uid://05feswqwjqrc" path="res://Assets/Groups/PolicyGroups/Abortion.tres" id="47_0ruy3"]
+[ext_resource type="ButtonGroup" uid="uid://dr7eejusv7r54" path="res://Assets/Groups/PolicyGroups/GayMarriage.tres" id="48_itfad"]
+[ext_resource type="ButtonGroup" uid="uid://c66h3cmfjwsc" path="res://Assets/Groups/PolicyGroups/GenderNeutralBathrooms.tres" id="49_dixw1"]
+[ext_resource type="ButtonGroup" uid="uid://spsdk6c7midt" path="res://Assets/Groups/PolicyGroups/ConversionTherapyBan.tres" id="50_waxbv"]
+[ext_resource type="ButtonGroup" uid="uid://lthusljqsmhi" path="res://Assets/Groups/PolicyGroups/InformedConsent.tres" id="51_8xo2p"]
+[ext_resource type="ButtonGroup" uid="uid://dy8sbbob6g5au" path="res://Assets/Groups/PolicyGroups/LegalSexWork.tres" id="52_kpuko"]
+[ext_resource type="ButtonGroup" uid="uid://bqx3saju2rdq5" path="res://Assets/Groups/PolicyGroups/PaidParentalLeave.tres" id="53_m2t7a"]
+[ext_resource type="ButtonGroup" uid="uid://c3jqfnxlriy1s" path="res://Assets/Groups/PolicyGroups/IndigenousFunding.tres" id="54_ae7qf"]
+[ext_resource type="ButtonGroup" uid="uid://cqox1xukyauie" path="res://Assets/Groups/PolicyGroups/PoliceFunding.tres" id="55_y57h0"]
+[ext_resource type="ButtonGroup" uid="uid://buv6jtmp5auys" path="res://Assets/Groups/PolicyGroups/MandatoryBodyCams.tres" id="56_m662k"]
+[ext_resource type="ButtonGroup" uid="uid://b5ys187fbj1c1" path="res://Assets/Groups/PolicyGroups/CriminalJusticeReform.tres" id="57_cegv4"]
+[ext_resource type="ButtonGroup" uid="uid://cg0ut3xu3m2v3" path="res://Assets/Groups/PolicyGroups/MinimumSentencing.tres" id="58_kjows"]
+[ext_resource type="ButtonGroup" uid="uid://cuniua6k5yki8" path="res://Assets/Groups/PolicyGroups/DeathPenality.tres" id="59_eh6fr"]
+[ext_resource type="ButtonGroup" uid="uid://bgd8p651rq431" path="res://Assets/Groups/PolicyGroups/PrivatePrisonBan.tres" id="60_mn0ge"]
+[ext_resource type="ButtonGroup" uid="uid://b01hd187ntrot" path="res://Assets/Groups/PolicyGroups/rehib.tres" id="61_x6b3y"]
+[ext_resource type="ButtonGroup" uid="uid://ctc6ffjulwtxn" path="res://Assets/Groups/PolicyGroups/increasedsurveillance.tres" id="62_na3wg"]
+[ext_resource type="ButtonGroup" uid="uid://bhfm2j2iyqa83" path="res://Assets/Groups/PolicyGroups/openborders.tres" id="63_541sm"]
+[ext_resource type="ButtonGroup" uid="uid://cpucj4r25cv4o" path="res://Assets/Groups/PolicyGroups/increasedfundingimmigration.tres" id="64_bbgu3"]
+[ext_resource type="ButtonGroup" uid="uid://6rri1rt1aqe1" path="res://Assets/Groups/PolicyGroups/borderwall.tres" id="65_upmao"]
+[ext_resource type="ButtonGroup" uid="uid://cpky6526e6s6j" path="res://Assets/Groups/PolicyGroups/massdeportations.tres" id="66_kdddc"]
+[ext_resource type="ButtonGroup" uid="uid://chxhorrsqiaiw" path="res://Assets/Groups/PolicyGroups/refugeeresettlement.tres" id="67_iep55"]
+[ext_resource type="ButtonGroup" uid="uid://bkfwqhy6r7h4t" path="res://Assets/Groups/PolicyGroups/pointsbasedimmigration.tres" id="68_i70d2"]
+[ext_resource type="ButtonGroup" uid="uid://dovtno7jhhca6" path="res://Assets/Groups/PolicyGroups/banfromspecficiccountries.tres" id="69_fk3hr"]
+[ext_resource type="ButtonGroup" uid="uid://7thbnpyxw3aj" path="res://Assets/Groups/PolicyGroups/publictransport.tres" id="70_le85x"]
+[ext_resource type="ButtonGroup" uid="uid://btvsybh3g7q8m" path="res://Assets/Groups/PolicyGroups/GovernmentHighway.tres" id="71_4qwq4"]
+[ext_resource type="ButtonGroup" uid="uid://c6slw8xfbuiw1" path="res://Assets/Groups/PolicyGroups/highwayexpansion.tres" id="72_p5rhr"]
+[ext_resource type="ButtonGroup" uid="uid://cbdlgkrlp13pw" path="res://Assets/Groups/PolicyGroups/affordablehhousing.tres" id="73_gmexh"]
+[ext_resource type="ButtonGroup" uid="uid://dn21gpt7p8l2s" path="res://Assets/Groups/PolicyGroups/HSR.tres" id="74_5saud"]
+[ext_resource type="ButtonGroup" uid="uid://dsi6xix7kft6i" path="res://Assets/Groups/PolicyGroups/waterinfrastrucutre.tres" id="75_b72x0"]
+[ext_resource type="ButtonGroup" uid="uid://dq7ytg73rgkgp" path="res://Assets/Groups/PolicyGroups/urbanrenewal.tres" id="76_n0ban"]
+[ext_resource type="ButtonGroup" uid="uid://c4k7wv12q37pn" path="res://Assets/Groups/PolicyGroups/withdrawl.tres" id="77_44gw1"]
+[ext_resource type="ButtonGroup" uid="uid://dmbdklvph58nc" path="res://Assets/Groups/PolicyGroups/increaseddefense.tres" id="78_17iwk"]
+[ext_resource type="ButtonGroup" uid="uid://cowqh1fk3nq7y" path="res://Assets/Groups/PolicyGroups/nato.tres" id="79_xrx7o"]
+[ext_resource type="ButtonGroup" uid="uid://bbwq8v2b8gp85" path="res://Assets/Groups/PolicyGroups/economicsanctions.tres" id="80_peuep"]
+[ext_resource type="ButtonGroup" uid="uid://bm37pqgflcpx4" path="res://Assets/Groups/PolicyGroups/aid.tres" id="81_sy8gt"]
+[ext_resource type="ButtonGroup" uid="uid://dkoa6i11ohgpo" path="res://Assets/Groups/PolicyGroups/climatetreaties.tres" id="82_6irje"]
+[ext_resource type="ButtonGroup" uid="uid://bwowxwqp0p82i" path="res://Assets/Groups/PolicyGroups/millataryalliances.tres" id="83_7joq1"]
+[ext_resource type="ButtonGroup" uid="uid://bqg2f2o8g6ykk" path="res://Assets/Groups/PolicyGroups/tradeembargoes.tres" id="84_00lb4"]
+[ext_resource type="ButtonGroup" uid="uid://eg641uv5stdo" path="res://Assets/Groups/PolicyGroups/ai.tres" id="85_qoxw7"]
+[ext_resource type="ButtonGroup" uid="uid://d3ftmyjfiy4wr" path="res://Assets/Groups/PolicyGroups/bigtechreg.tres" id="86_f5040"]
+[ext_resource type="ButtonGroup" uid="uid://qi35ombicn22" path="res://Assets/Groups/PolicyGroups/facialtechban.tres" id="87_843me"]
+[ext_resource type="ButtonGroup" uid="uid://du0j4h2td48fc" path="res://Assets/Groups/PolicyGroups/internetprivacylaws.tres" id="88_w4rhs"]
+[ext_resource type="ButtonGroup" uid="uid://blvenwoshuflg" path="res://Assets/Groups/PolicyGroups/GreenTechTaxIncentive.tres" id="89_pvdpq"]
+[ext_resource type="ButtonGroup" uid="uid://b7jip8783yle1" path="res://Assets/Groups/PolicyGroups/universalbroadbandinternet.tres" id="90_87lc0"]
+[ext_resource type="ButtonGroup" uid="uid://b15j5732ijuqo" path="res://Assets/Groups/PolicyGroups/lowerincome.tres" id="91_df0tj"]
+[ext_resource type="ButtonGroup" uid="uid://chxb6tkjeag6b" path="res://Assets/Groups/PolicyGroups/crypto.tres" id="91_l5c77"]
+[ext_resource type="ButtonGroup" uid="uid://bm0cn6ug20idp" path="res://Assets/Groups/PolicyGroups/middleincome.tres" id="92_lw2qi"]
+[ext_resource type="ButtonGroup" uid="uid://dphn0475kt2mi" path="res://Assets/Groups/PolicyGroups/highincome.tres" id="93_osdyh"]
+[ext_resource type="ButtonGroup" uid="uid://bu081v07dluxr" path="res://Assets/Groups/PolicyGroups/flatincome.tres" id="94_0uoia"]
+[ext_resource type="ButtonGroup" uid="uid://bmjr578lahg5k" path="res://Assets/Groups/PolicyGroups/corperatetax.tres" id="95_fpu7b"]
+[ext_resource type="ButtonGroup" uid="uid://cl5txhkuamt8q" path="res://Assets/Groups/PolicyGroups/salestax.tres" id="96_mgvfw"]
+[ext_resource type="ButtonGroup" uid="uid://bqbm4iyhcx2fk" path="res://Assets/Groups/PolicyGroups/luxurygoodstax.tres" id="97_4kxhx"]
+[ext_resource type="ButtonGroup" uid="uid://bf2mh0ss2rbhi" path="res://Assets/Groups/PolicyGroups/inherentencetax.tres" id="98_h3ph6"]
+[ext_resource type="ButtonGroup" uid="uid://cwmcrlwyy5d86" path="res://Assets/Groups/PolicyGroups/capitalgainstax.tres" id="99_8471e"]
+[ext_resource type="ButtonGroup" uid="uid://0tlj8v54j0nn" path="res://Assets/Groups/PolicyGroups/quebecindependence.tres" id="100_6mwiw"]
+[ext_resource type="ButtonGroup" uid="uid://wor5co8eamr7" path="res://Assets/Groups/PolicyGroups/bilingualism.tres" id="101_3koer"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -386,9 +468,9 @@ layout_mode = 2
 [node name="PresetButtonContainer" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel"]
 layout_mode = 0
 offset_left = 24.0
-offset_top = -89.0
+offset_top = -14.0
 offset_right = 894.0
-offset_bottom = -49.0
+offset_bottom = 26.0
 
 [node name="PolicyPresets" type="Button" parent="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel/PresetButtonContainer"]
 layout_mode = 2
@@ -509,31 +591,6 @@ text = "Yes"
 layout_mode = 2
 size_flags_horizontal = 6
 button_group = ExtResource("8_ps10p")
-text = "No"
-
-[node name="CorperateTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="CorperateTaxQuestionQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support increasing taxes on corporations?"
-horizontal_alignment = 1
-
-[node name="CorperateTaxOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax"]
-layout_mode = 2
-
-[node name="YesCheckButtonCorperateTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax/CorperateTaxOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-button_group = ExtResource("9_6ahp8")
-text = "Yes"
-
-[node name="NoCheckBoxCorperateTax" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy/CorperateTax/CorperateTaxOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-button_group = ExtResource("9_6ahp8")
 text = "No"
 
 [node name="SmallBuisnessSubsidies" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EconomicPolicy"]
@@ -743,192 +800,184 @@ theme_override_constants/separation = 15
 
 [node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
+size_flags_vertical = 6
 theme_override_constants/line_spacing = 35
 text = "Healthcare"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="PharmaCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare"]
+[node name="PharmcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/PharmaCare"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support pharmacare?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/PharmaCare"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/PharmaCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("20_b3rhb")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/PharmaCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("20_b3rhb")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="FreeMentalHealth" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2"]
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/FreeMentalHealth"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support free mental healthcare coverage?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/FreeMentalHealth"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/FreeMentalHealth/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("21_5d2w0")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/FreeMentalHealth/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("21_5d2w0")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="RareDeseaseResearch" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3"]
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/RareDeseaseResearch"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increased funding to rare disease?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/RareDeseaseResearch"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/RareDeseaseResearch/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("22_mrwul")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/RareDeseaseResearch/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("22_mrwul")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="DrugDecrim" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4"]
+[node name="DrugDecrimQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugDecrim"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support decriminalzing drugs?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugDecrim"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugDecrim/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("23_1uhst")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugDecrim/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("23_1uhst")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="DrugPriceCaps" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5"]
+[node name="DrugPriceCapsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugPriceCaps"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support drug price caps?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugPriceCaps"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugPriceCaps/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("24_528wb")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/DrugPriceCaps/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("24_528wb")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="LongTermCareFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6"]
+[node name="LongTermCareFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/LongTermCareFunding"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increased funding to long term care?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/LongTermCareFunding"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/LongTermCareFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("25_vsapb")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/LongTermCareFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("25_vsapb")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
+[node name="UniversalHealthCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8"]
+[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHealthCare"]
 layout_mode = 2
 size_flags_vertical = 6
 text = "Do you support universal healthcare?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHealthCare"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHealthCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("26_8pp5m")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/HealthCarePolicy/UniversalHealthCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("26_8pp5m")
 text = "No"
 
 [node name="EducationPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
@@ -948,1618 +997,2021 @@ layout_mode = 2
 text = "Do you support free tuition to university?"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FreeUniversityTuition"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FreeUniversityTuition/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("27_xyuti")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FreeUniversityTuition/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("27_xyuti")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="PublicSchoolFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3"]
+[node name="PublicSchoolFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PublicSchoolFunding"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increasing public school funding?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PublicSchoolFunding"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PublicSchoolFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("28_c6v6g")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PublicSchoolFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("28_c6v6g")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="SchoolVouchers" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4"]
+[node name="SchoolVouchersQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/SchoolVouchers"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support school vouchers?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/SchoolVouchers"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/SchoolVouchers/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("29_4mjv1")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/SchoolVouchers/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("29_4mjv1")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="StudentLoanElim" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5"]
+[node name="StudentLoanForgivenessQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/StudentLoanElim"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support forgiving all outstanding student loan debt?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/StudentLoanElim"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/StudentLoanElim/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("30_m7vf4")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/StudentLoanElim/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("30_m7vf4")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="NationalCurriculum" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6"]
+[node name="NationalCurriculumStandardsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/NationalCurriculum"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support implementing national curriculums?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/NationalCurriculum"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/NationalCurriculum/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("31_5shrt")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/NationalCurriculum/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("31_5shrt")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="TeacherSalaryIncrease" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7"]
+[node name="TeacherSalaryIncreaseQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/TeacherSalaryIncrease"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increasing teacher salaries?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/TeacherSalaryIncrease"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/TeacherSalaryIncrease/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("32_6dn81")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/TeacherSalaryIncrease/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("32_6dn81")
 text = "No"
 
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="FinancialLiteracyClasses" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8"]
+[node name="FinancialLiteracyQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FinancialLiteracyClasses"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support mandatory financial literacy courses?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FinancialLiteracyClasses"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FinancialLiteracyClasses/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("33_f8ofb")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/FinancialLiteracyClasses/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("33_f8ofb")
 text = "No"
 
-[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+[node name="STEMFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9"]
+[node name="STEMFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/STEMFunding"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increased funding for STEM programs?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/STEMFunding"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/STEMFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("34_v3wqw")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/STEMFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("34_v3wqw")
+text = "No"
+
+[node name="PrivateSchoolBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="PrivateSchoolBanQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PrivateSchoolBan"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a ban on private schools?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PrivateSchoolBan"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PrivateSchoolBan/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("35_gox4a")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EducationPolicy/PrivateSchoolBan/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("35_gox4a")
 text = "No"
 
 [node name="EnviromentPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+[node name="EnvironmentPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
-text = "Healthcare"
+text = "Enviroment Policy"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+[node name="SingleUsePlasticsBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare"]
+[node name="SingleUsePlastics" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/SingleUsePlasticsBan"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a ban on single use plastics?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/SingleUsePlasticsBan"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/SingleUsePlasticsBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("36_xr7ui")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/SingleUsePlasticsBan/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("36_xr7ui")
+text = "No"
+
+[node name="RenewableEnergyInvestements" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="RenewableEnergyQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/RenewableEnergyInvestements"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support investing in renewable energy?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/RenewableEnergyInvestements"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/RenewableEnergyInvestements/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("37_lx32b")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/RenewableEnergyInvestements/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("37_lx32b")
+text = "No"
+
+[node name="FossileFuelPhaseOut" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="FossileFuelPhaseOutQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FossileFuelPhaseOut"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a phase out of fossile fuels?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FossileFuelPhaseOut"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FossileFuelPhaseOut/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("38_l8uvh")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FossileFuelPhaseOut/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("38_l8uvh")
+text = "No"
+
+[node name="NationalParkExpansion" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="NationalParkExpansion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NationalParkExpansion"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support expanding national parks?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NationalParkExpansion"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NationalParkExpansion/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("39_uo45b")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NationalParkExpansion/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("39_uo45b")
+text = "No"
+
+[node name="2050CarbonNeutrality" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="2050CarbonNeutrality" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/2050CarbonNeutrality"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support achieving carbon neutrality by 2050?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/2050CarbonNeutrality"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/2050CarbonNeutrality/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("40_du00i")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/2050CarbonNeutrality/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("40_du00i")
+text = "No"
+
+[node name="EVSubsidies" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="EVSubsidiesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/EVSubsidies"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support subsidies for electric vehicles?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/EVSubsidies"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/EVSubsidies/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("41_sx2jb")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/EVSubsidies/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("41_sx2jb")
+text = "No"
+
+[node name="PolutionRegs" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="PolutionRegsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/PolutionRegs"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support regulations on polutions?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/PolutionRegs"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/PolutionRegs/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("42_03u6w")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/PolutionRegs/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("42_03u6w")
+text = "No"
+
+[node name="NuclearEnergy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="NuclearEnergyQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NuclearEnergy"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support expanding nuclear energy?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NuclearEnergy"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NuclearEnergy/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("43_vv7p2")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NuclearEnergy/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
+[node name="FrackingBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2"]
+[node name="FrackingBanQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FrackingBan"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a fracking ban?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FrackingBan"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FrackingBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("44_x4w3q")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/FrackingBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
+button_group = ExtResource("44_x4w3q")
 text = "No"
 
 [node name="SocialPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="SocialPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
-text = "Healthcare"
+text = "Social Policy"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="UniversalChildCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare"]
+[node name="UniversalChildCare" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalChildCare"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support universal child care?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalChildCare"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalChildCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("45_fr3pp")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalChildCare/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("45_fr3pp")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="GunControl" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2"]
+[node name="GunControlQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GunControl"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support gun control?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GunControl"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GunControl/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("46_bhqtp")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GunControl/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("46_bhqtp")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="Abortion" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3"]
+[node name="AbortionQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/Abortion"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support acsess to abortion?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/Abortion"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/Abortion/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("47_0ruy3")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/Abortion/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("47_0ruy3")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="GayMarriage" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4"]
+[node name="GayMarriageQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GayMarriage"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support gay marriage?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GayMarriage"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GayMarriage/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("48_itfad")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GayMarriage/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("48_itfad")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="GenderNeutralRestrooms" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5"]
+[node name="GenderNeutralBathroomQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GenderNeutralRestrooms"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support gender neutral bathrooms?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GenderNeutralRestrooms"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GenderNeutralRestrooms/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("49_dixw1")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/GenderNeutralRestrooms/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("49_dixw1")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="ConversionTherapyBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6"]
+[node name="ConversionTherapyBanQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/ConversionTherapyBan"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support banning conversion therapy?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/ConversionTherapyBan"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/ConversionTherapyBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("50_waxbv")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/ConversionTherapyBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("50_waxbv")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="InformedConsent" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7"]
+[node name="InformedConsentQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/InformedConsent"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support informed consent based gender affirming care?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/InformedConsent"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/InformedConsent/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("51_8xo2p")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/InformedConsent/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("51_8xo2p")
 text = "No"
 
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="LegalSexWork" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8"]
+[node name="LegalSexWorkQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/LegalSexWork"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support legalizing sex work?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/LegalSexWork"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/LegalSexWork/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("52_kpuko")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/LegalSexWork/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("52_kpuko")
 text = "No"
 
-[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+[node name="PaidParentalLeave" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9"]
+[node name="PaidParentalLeaveQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/PaidParentalLeave"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support paid parental leave?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/PaidParentalLeave"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/PaidParentalLeave/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("53_m2t7a")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/PaidParentalLeave/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("53_m2t7a")
+text = "No"
+
+[node name="IndigenousFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="IndigenousFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/IndigenousFunding"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support increasing funding to Indigenous communties?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/IndigenousFunding"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/IndigenousFunding/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("54_ae7qf")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/SocialPolicy/IndigenousFunding/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("54_ae7qf")
 text = "No"
 
 [node name="JusticePolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="JusticePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
 text = "Healthcare"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="PoliceFundingIncrease" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare"]
+[node name="PoliceFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PoliceFundingIncrease"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increasing funding to police departments?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PoliceFundingIncrease"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PoliceFundingIncrease/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("55_y57h0")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PoliceFundingIncrease/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("55_y57h0")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="MandatoryBodyCams" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2"]
+[node name="ManditoryBodyCams" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MandatoryBodyCams"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support mandatory body cameras for police officers?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MandatoryBodyCams"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MandatoryBodyCams/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("56_m662k")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MandatoryBodyCams/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("56_m662k")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="CriminalJusticeReform" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3"]
+[node name="CrimJusQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/CriminalJusticeReform"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support criminal justice reform?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/CriminalJusticeReform"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/CriminalJusticeReform/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("57_cegv4")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/CriminalJusticeReform/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("57_cegv4")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="MinimumSentencing" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4"]
+[node name="MinimumSentancingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MinimumSentencing"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support minimum sentencing?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MinimumSentencing"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MinimumSentencing/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("58_kjows")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/MinimumSentencing/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("58_kjows")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="DeathPenalty" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5"]
+[node name="DeathPenaltyQuestions" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/DeathPenalty"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support the death penalty?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/DeathPenalty"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/DeathPenalty/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("59_eh6fr")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/DeathPenalty/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("59_eh6fr")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="PrivatePrisonBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6"]
+[node name="PrivatePrisionBanQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PrivatePrisonBan"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a ban on private prisons?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PrivatePrisonBan"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PrivatePrisonBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("60_mn0ge")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/PrivatePrisonBan/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("60_mn0ge")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="RehibilationPrograms" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7"]
+[node name="RehibilationProgramsQuestions" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/RehibilationPrograms"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support rehabilitation programs?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/RehibilationPrograms"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/RehibilationPrograms/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("61_x6b3y")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/RehibilationPrograms/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("61_x6b3y")
 text = "No"
 
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
+[node name="IncreasedSurveilance" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8"]
+[node name="IncrasedSurveilanceQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/IncreasedSurveilance"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increased surveilance?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/IncreasedSurveilance"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/IncreasedSurveilance/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("62_na3wg")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/JusticePolicy/IncreasedSurveilance/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("62_na3wg")
 text = "No"
 
 [node name="ImmigrationPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="ImmigrationHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
 text = "Healthcare"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="OpenBorders" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare"]
+[node name="OpenBordersQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/OpenBorders"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support open borders?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/OpenBorders"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/OpenBorders/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("63_541sm")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/OpenBorders/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("63_541sm")
+text = "No"
+
+[node name="IncreasedFundingForImmigration" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="ImmigrationFundingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/IncreasedFundingForImmigration"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support increased funding to immigration services?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/IncreasedFundingForImmigration"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/IncreasedFundingForImmigration/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("64_bbgu3")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/IncreasedFundingForImmigration/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("64_bbgu3")
+text = "No"
+
+[node name="BorderWall" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="BorderWallQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BorderWall"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a border wall with the USA?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BorderWall"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BorderWall/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("65_upmao")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BorderWall/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("65_upmao")
+text = "No"
+
+[node name="PathwayToCitizenship" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="PathwayToCitizenshipQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a pathway to citizenship for immigrants who haven't comitted a crime?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="MassDeportation" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2"]
+[node name="MassDeportationQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/MassDeportation"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a mass deportation of immigrants?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/MassDeportation"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/MassDeportation/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("66_kdddc")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/MassDeportation/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("66_kdddc")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="RefugeeResettlementProgram" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3"]
+[node name="RefugeeResettlementQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/RefugeeResettlementProgram"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support resetlling refugess in other countries?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/RefugeeResettlementProgram"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/RefugeeResettlementProgram/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("67_iep55")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/RefugeeResettlementProgram/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("67_iep55")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="PointsBasedImmigration" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4"]
+[node name="PointsBasedImmigration" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PointsBasedImmigration"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a points-based immigration system?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PointsBasedImmigration"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PointsBasedImmigration/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("68_i70d2")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PointsBasedImmigration/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("68_i70d2")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
+[node name="BanFromSpecific" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5"]
+[node name="BanFromSpecficCountriesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BanFromSpecific"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support banning immigration from certain countries?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BanFromSpecific"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BanFromSpecific/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("69_fk3hr")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/BanFromSpecific/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
+button_group = ExtResource("69_fk3hr")
 text = "No"
 
 [node name="InfrastructurePolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="Infrastructure" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
 text = "Healthcare"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="PublicTransportPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare"]
+[node name="PublicTransport" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/PublicTransportPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support  increased funding to public transportation?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/PublicTransportPolicy"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/PublicTransportPolicy/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("70_le85x")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/PublicTransportPolicy/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("70_le85x")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="GovernmentHighSpeedInternet" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2"]
+[node name="GovernmentInternetQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/GovernmentHighSpeedInternet"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support government run high-speed internet?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/GovernmentHighSpeedInternet"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/GovernmentHighSpeedInternet/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("71_4qwq4")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/GovernmentHighSpeedInternet/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("71_4qwq4")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="HighwayExpansion" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3"]
+[node name="HighwayExpansionQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighwayExpansion"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support building more highways?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighwayExpansion"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighwayExpansion/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("72_p5rhr")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighwayExpansion/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("72_p5rhr")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="AffordableHousing" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4"]
+[node name="AffordableHousing" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/AffordableHousing"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support affordable housing?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/AffordableHousing"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/AffordableHousing/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("73_gmexh")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/AffordableHousing/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("73_gmexh")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="HighSpeedRail" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5"]
+[node name="HSRQ" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighSpeedRail"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support high speed rail?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighSpeedRail"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighSpeedRail/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("74_5saud")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/HighSpeedRail/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("74_5saud")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="WaterInfrastrucutreUpgrades" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6"]
+[node name="WaterInfrastructureQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/WaterInfrastrucutreUpgrades"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support expanding water infrastructure?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/WaterInfrastrucutreUpgrades"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/WaterInfrastrucutreUpgrades/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("75_b72x0")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/WaterInfrastrucutreUpgrades/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("75_b72x0")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
+[node name="UrbanRenewal" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7"]
+[node name="UrbanRenewal" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UrbanRenewal"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support urban renewal?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UrbanRenewal"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UrbanRenewal/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("76_n0ban")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/InfrastructurePolicy/UrbanRenewal/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("37_lx32b")
 text = "No"
 
 [node name="ForeignPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="ForeignPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
-text = "Healthcare"
+text = "Foreign Policy"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="Withdrawl" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare"]
+[node name="WithdrawlQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/Withdrawl"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support withdrawing from all foreign milatary conflicts?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/Withdrawl"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/Withdrawl/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("77_44gw1")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/Withdrawl/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("77_44gw1")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="IncreasedDefenseSpending" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2"]
+[node name="DefenseSpendingQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/IncreasedDefenseSpending"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increasing defense spending?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/IncreasedDefenseSpending"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/IncreasedDefenseSpending/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("78_17iwk")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/IncreasedDefenseSpending/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("78_17iwk")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="NATOSupport" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3"]
+[node name="NatoSupportQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/NATOSupport"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support NATO?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/NATOSupport"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/NATOSupport/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("79_xrx7o")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/NATOSupport/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("79_xrx7o")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="EconomicSanctions" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4"]
+[node name="EconomicSanctionsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/EconomicSanctions"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support economic sanctions against authoratrian states?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/EconomicSanctions"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/EconomicSanctions/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("80_peuep")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/EconomicSanctions/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("80_peuep")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="HumanatarianAid" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5"]
+[node name="HumanatarianAidQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/HumanatarianAid"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support providing other countries with humanatarian aid?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/HumanatarianAid"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/HumanatarianAid/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("81_sy8gt")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/HumanatarianAid/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("81_sy8gt")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="ClimateTreaties" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6"]
+[node name="ClimateTreatiesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/ClimateTreaties"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support forming climate treaties with other countries to cut down on emissions?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/ClimateTreaties"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/ClimateTreaties/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("82_6irje")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/ClimateTreaties/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("82_6irje")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="MilataryAlliances" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7"]
+[node name="MilataryAlliancesQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/MilataryAlliances"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support forming milatary alliances with other countries?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/MilataryAlliances"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/MilataryAlliances/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("83_7joq1")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/MilataryAlliances/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("83_7joq1")
 text = "No"
 
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
+[node name="TradeEmbargoes" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8"]
+[node name="TradeEmbargoQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/TradeEmbargoes"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support trade embargoes against authortarian states?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/TradeEmbargoes"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/TradeEmbargoes/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("84_00lb4")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ForeignPolicy/TradeEmbargoes/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("84_00lb4")
 text = "No"
 
 [node name="TechPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+[node name="TechPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
 text = "Healthcare"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+[node name="AIResearchFunding" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare"]
+[node name="AIResearchQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/AIResearchFunding"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support government funding for AI research?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/AIResearchFunding"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/AIResearchFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("85_qoxw7")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/AIResearchFunding/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("85_qoxw7")
+text = "No"
+
+[node name="BigTechReg" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="BigTechRegQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/BigTechReg"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support regulations on Big Tech?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/BigTechReg"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/BigTechReg/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("86_f5040")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/BigTechReg/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("86_f5040")
+text = "No"
+
+[node name="FacialTechBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="FacialTechBanQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/FacialTechBan"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a ban on facial recognition technology?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/FacialTechBan"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/FacialTechBan/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("87_843me")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/FacialTechBan/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("87_843me")
+text = "No"
+
+[node name="InternetPrivacyLaws" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="InternetPrivacyLawsQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/InternetPrivacyLaws"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support internet privacy laws?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/InternetPrivacyLaws"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/InternetPrivacyLaws/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("88_w4rhs")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/InternetPrivacyLaws/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("88_w4rhs")
+text = "No"
+
+[node name="GreenTechTaxCredit" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="GreenTechTaxCreditQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/GreenTechTaxCredit"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a tax incentive for green tech startups?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/GreenTechTaxCredit"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/GreenTechTaxCredit/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("89_pvdpq")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/GreenTechTaxCredit/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("89_pvdpq")
+text = "No"
+
+[node name="UniversalInternet" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="UniveralBroadbandQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalInternet"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support universal broadband internet?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalInternet"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalInternet/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("90_87lc0")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/UniversalInternet/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("90_87lc0")
+text = "No"
+
+[node name="CryptoAdoption" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="CryptoAdoptionQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/CryptoAdoption"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support adopting crypto currency?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/CryptoAdoption"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/CryptoAdoption/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("91_l5c77")
+text = "Yes"
+
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TechPolicy/CryptoAdoption/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("91_l5c77")
 text = "No"
 
 [node name="TaxPolicy" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
 
-[node name="HealthCarePolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="TaxPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 theme_override_constants/line_spacing = 35
-text = "Healthcare"
+text = "Tax Policy"
 horizontal_alignment = 1
 
-[node name="UniversalHeatlCare" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="LowerIncomeTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare"]
+[node name="LowerIncomeTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LowerIncomeTax"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support raising, maintaining, or lowering income tax for lower income earners?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LowerIncomeTax"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="Increase" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LowerIncomeTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("91_df0tj")
+text = "Increase"
+
+[node name="Maintain" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LowerIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("91_df0tj")
+text = "Maintain"
+
+[node name="Decrease" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LowerIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_group = ExtResource("91_df0tj")
+text = "Decrease"
+
+[node name="MiddleIncomeTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="MiddleIncomeTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/MiddleIncomeTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support raising, maintaining, or decreasing income tax for middle income earners?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/MiddleIncomeTax"]
+layout_mode = 2
+
+[node name="Increase" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/MiddleIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("92_lw2qi")
+text = "Increase"
+
+[node name="Maintain" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/MiddleIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("92_lw2qi")
+text = "Maintain"
+
+[node name="Decrease" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/MiddleIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_group = ExtResource("92_lw2qi")
+text = "Decrease"
+
+[node name="HighIncomeTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="HighIncomeTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/HighIncomeTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support increasing, maintaining, or decreasing income tax for high earners?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/HighIncomeTax"]
+layout_mode = 2
+
+[node name="Increase" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/HighIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("93_osdyh")
+text = "Increase"
+
+[node name="Maintain" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/HighIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("93_osdyh")
+text = "Maintain"
+
+[node name="Decrease" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/HighIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_group = ExtResource("93_osdyh")
+text = "Decrease"
+
+[node name="FlatIncomeTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="FlatIncomeTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/FlatIncomeTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a flat income tax?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/FlatIncomeTax"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/FlatIncomeTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("94_0uoia")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/FlatIncomeTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("94_0uoia")
 text = "No"
 
-[node name="UniversalHeatlCare2" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="CorprateTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2"]
+[node name="CorprateTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CorprateTax"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support increasing, maintaing, or reducing the corperate tax rate?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CorprateTax"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="Increase" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CorprateTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("95_fpu7b")
+text = "Increase"
+
+[node name="Maintain" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CorprateTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("95_fpu7b")
+text = "Decrease"
+
+[node name="Decrease" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CorprateTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_group = ExtResource("95_fpu7b")
+
+[node name="SalesTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="SalesTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/SalesTax"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you support a general sales tax (GST)?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/SalesTax"]
+layout_mode = 2
+
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/SalesTax/Options"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_group = ExtResource("96_mgvfw")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare2/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/SalesTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("96_mgvfw")
 text = "No"
 
-[node name="UniversalHeatlCare3" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="LuxuryGoodsTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3"]
+[node name="LuxuryGoodsTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LuxuryGoodsTax"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a tax on luxury goods?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LuxuryGoodsTax"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LuxuryGoodsTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("97_4kxhx")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare3/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/LuxuryGoodsTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("97_4kxhx")
 text = "No"
 
-[node name="UniversalHeatlCare4" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="InherentenceTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4"]
+[node name="InherentenceTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/InherentenceTax"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support an inherentence tax?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/InherentenceTax"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/InherentenceTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("98_h3ph6")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare4/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/InherentenceTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("98_h3ph6")
 text = "No"
 
-[node name="UniversalHeatlCare5" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="CapitalGainsTax" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5"]
+[node name="CapitalGainsTaxQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CapitalGainsTax"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Do you support a capial gains tax?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CapitalGainsTax"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CapitalGainsTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("99_8471e")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare5/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/CapitalGainsTax/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("99_8471e")
 text = "No"
 
-[node name="UniversalHeatlCare6" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="Quebec" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
-size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6"]
+[node name="TaxPolicyHeader" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec"]
 layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+theme_override_constants/line_spacing = 35
+text = "Quebec"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6"]
+[node name="QuebecIndependence" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="QuebecIndependence" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/QuebecIndependence"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Should Quebec become independent?"
+horizontal_alignment = 1
+
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/QuebecIndependence"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/QuebecIndependence/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("100_6mwiw")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare6/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/QuebecIndependence/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("100_6mwiw")
 text = "No"
 
-[node name="UniversalHeatlCare7" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
+[node name="Bilingualism" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec"]
 layout_mode = 2
 size_flags_vertical = 6
 
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7"]
+[node name="Bilingualism" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/Bilingualism"]
 layout_mode = 2
 size_flags_vertical = 6
-text = "Do you support universal healthcare?"
+text = "Should English and French be the offical languages of Canada?"
 horizontal_alignment = 1
 
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7"]
+[node name="Options" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/Bilingualism"]
 layout_mode = 2
 
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/Bilingualism/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("101_3koer")
 text = "Yes"
 
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare7/UniversalHealthcareOptions"]
+[node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/Quebec/Bilingualism/Options"]
 layout_mode = 2
 size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare8" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare8/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "No"
-
-[node name="UniversalHeatlCare9" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy"]
-layout_mode = 2
-size_flags_vertical = 6
-
-[node name="UniversalHealthcareQuestion" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9"]
-layout_mode = 2
-size_flags_vertical = 6
-text = "Do you support universal healthcare?"
-horizontal_alignment = 1
-
-[node name="UniversalHealthcareOptions" type="HBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9"]
-layout_mode = 2
-
-[node name="UniversalHealthcareYes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Yes"
-
-[node name="UniversalHealthCareNo" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/TaxPolicy/UniversalHeatlCare9/UniversalHealthcareOptions"]
-layout_mode = 2
-size_flags_horizontal = 6
+button_group = ExtResource("101_3koer")
 text = "No"
 
 [node name="Advanced" type="Control" parent="TabContainer"]
