@@ -1139,9 +1139,3 @@ public partial class PolicyPresetsPanel : Panel
         Policies.Visible = true;
     }
 }
-			
-
-
-
-
-

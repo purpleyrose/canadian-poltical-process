@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=3 uid="uid://dwwagfj32jojj"]
+[gd_scene load_steps=108 format=3 uid="uid://dwwagfj32jojj"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterCreation.cs" id="1_esh3k"]
 [ext_resource type="Script" path="res://Scripts/GeneralBox.cs" id="2_kot0u"]
@@ -9,6 +9,7 @@
 [ext_resource type="ButtonGroup" uid="uid://ui8tkypxhuy6" path="res://Assets/Groups/PolicyGroups/MinimumWageGroup.tres" id="5_gpnnq"]
 [ext_resource type="Script" path="res://Scripts/Advanced.cs" id="5_yhvtf"]
 [ext_resource type="ButtonGroup" uid="uid://nsn0gb7iw8xp" path="res://Assets/Groups/PolicyGroups/UnionFundingButtonGroup.tres" id="6_mbftt"]
+[ext_resource type="Script" path="res://Scripts/PolicyBox.cs" id="7_7tv78"]
 [ext_resource type="Script" path="res://Scripts/PolicyPresetsPanel.cs" id="7_bg0ju"]
 [ext_resource type="ButtonGroup" uid="uid://dfou6bmr1fptl" path="res://Assets/Groups/PolicyGroups/RightToWork.tres" id="7_rd6pm"]
 [ext_resource type="ButtonGroup" uid="uid://wvsjriou21ko" path="res://Assets/Groups/PolicyGroups/UBI.tres" id="8_ps10p"]
@@ -68,6 +69,7 @@
 [ext_resource type="ButtonGroup" uid="uid://cpucj4r25cv4o" path="res://Assets/Groups/PolicyGroups/increasedfundingimmigration.tres" id="64_bbgu3"]
 [ext_resource type="ButtonGroup" uid="uid://6rri1rt1aqe1" path="res://Assets/Groups/PolicyGroups/borderwall.tres" id="65_upmao"]
 [ext_resource type="ButtonGroup" uid="uid://cpky6526e6s6j" path="res://Assets/Groups/PolicyGroups/massdeportations.tres" id="66_kdddc"]
+[ext_resource type="ButtonGroup" uid="uid://ho7xleo5ogg7" path="res://Assets/Groups/PolicyGroups/PathwayToCitizenship.tres" id="66_xrm28"]
 [ext_resource type="ButtonGroup" uid="uid://chxhorrsqiaiw" path="res://Assets/Groups/PolicyGroups/refugeeresettlement.tres" id="67_iep55"]
 [ext_resource type="ButtonGroup" uid="uid://bkfwqhy6r7h4t" path="res://Assets/Groups/PolicyGroups/pointsbasedimmigration.tres" id="68_i70d2"]
 [ext_resource type="ButtonGroup" uid="uid://dovtno7jhhca6" path="res://Assets/Groups/PolicyGroups/banfromspecficiccountries.tres" id="69_fk3hr"]
@@ -104,6 +106,7 @@
 [ext_resource type="ButtonGroup" uid="uid://cwmcrlwyy5d86" path="res://Assets/Groups/PolicyGroups/capitalgainstax.tres" id="99_8471e"]
 [ext_resource type="ButtonGroup" uid="uid://0tlj8v54j0nn" path="res://Assets/Groups/PolicyGroups/quebecindependence.tres" id="100_6mwiw"]
 [ext_resource type="ButtonGroup" uid="uid://wor5co8eamr7" path="res://Assets/Groups/PolicyGroups/bilingualism.tres" id="101_3koer"]
+[ext_resource type="Script" path="res://Scripts/PolicyScoreCalculator.cs" id="103_ftvoj"]
 
 [node name="CharacterCreation" type="Node2D"]
 script = ExtResource("1_esh3k")
@@ -454,6 +457,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 19
 alignment = 2
+script = ExtResource("7_7tv78")
 
 [node name="PolicyLabel" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
 layout_mode = 2
@@ -1420,6 +1424,7 @@ text = "Yes"
 [node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy/NuclearEnergy/Options" groups=["PolicyGroup"]]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("43_vv7p2")
 text = "No"
 
 [node name="FrackingBan" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/EnviromentPolicy"]
@@ -2015,11 +2020,13 @@ layout_mode = 2
 [node name="Yes" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship/Options" groups=["PolicyGroup"]]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("66_xrm28")
 text = "Yes"
 
 [node name="No" type="CheckBox" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy/PathwayToCitizenship/Options" groups=["PolicyGroup"]]
 layout_mode = 2
 size_flags_horizontal = 6
+button_group = ExtResource("66_xrm28")
 text = "No"
 
 [node name="MassDeportation" type="VBoxContainer" parent="TabContainer/Policy/ScrollContainer/PolicyBox/ImmigrationPolicy"]
@@ -3015,6 +3022,33 @@ size_flags_horizontal = 6
 button_group = ExtResource("101_3koer")
 text = "No"
 
+[node name="PolicyScore" type="Button" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Calculate Policy Score"
+
+[node name="SocialScore" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Social Score:"
+
+[node name="EconomicScore" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Economic Score: "
+
+[node name="EnvironmentalScore" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Environmental Score:"
+
+[node name="QuebecScore" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Quebec Score:"
+
+[node name="SuggestedParty" type="Label" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+layout_mode = 2
+text = "Suggested Party: "
+
+[node name="PolicyScoreCalculator" type="Node" parent="TabContainer/Policy/ScrollContainer/PolicyBox"]
+script = ExtResource("103_ftvoj")
+
 [node name="PolicyPresetsPanel" type="Panel" parent="TabContainer/Policy"]
 layout_mode = 1
 anchors_preset = 15
@@ -3207,6 +3241,7 @@ script = ExtResource("21_q3qxb")
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/AddButton" to="TabContainer/History" method="_on_add_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/ExitButton" to="TabContainer/History" method="_on_exit_button_pressed"]
 [connection signal="pressed" from="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyPresetsPanel/PresetButtonContainer/PolicyPresets" to="TabContainer/Policy/PolicyPresetsPanel" method="_on_policy_presets_pressed"]
+[connection signal="pressed" from="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyScore" to="TabContainer/Policy/ScrollContainer/PolicyBox/PolicyScoreCalculator" method="_on_policy_score_pressed"]
 [connection signal="pressed" from="TabContainer/Policy/PolicyPresetsPanel/DemSoc" to="TabContainer/Policy/PolicyPresetsPanel" method="_on_dem_soc_pressed"]
 [connection signal="pressed" from="TabContainer/Policy/PolicyPresetsPanel/Progressive" to="TabContainer/Policy/PolicyPresetsPanel" method="_on_progressive_pressed"]
 [connection signal="pressed" from="TabContainer/Policy/PolicyPresetsPanel/Liberal" to="TabContainer/Policy/PolicyPresetsPanel" method="_on_liberal_pressed"]
