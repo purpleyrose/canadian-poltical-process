@@ -12,12 +12,13 @@ public partial class CharacterCreation : Node2D
 	private CheckBox CPCButton;
 	private CheckBox GPCButton;
 	private CheckBox PPCButton;
+	private CheckBox BQButton;
 	private Color LPCColor = RGBToColor(234,109,106);
 	private Color NDPColor = RGBToColor(244,164,96);
 	private Color CPCColor = RGBToColor(100,149,237);
 	private Color GPCColor = RGBToColor(153,201,85);
 	private Color PPCColor = RGBToColor(111,93,154);
-	private Color BQColor = RGBToColor(0,0,0);
+	private Color BQColor = RGBToColor(63,183,191);
 	private Panel Background;
 	private ColorRect CharacterPortrait;
 	private Button ContinueButton;
@@ -44,7 +45,9 @@ public partial class CharacterCreation : Node2D
 		CPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton");
 		GPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton");
 		PPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton");
+		BQButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/BQButton");
 		Background = GetNode<Panel>("Background");
+		BQButton.Connect("toggled", new Callable(this, nameof(_on_bq_button_toggled)));
 		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortraitBG");
 		CharacterPortrait.Color = LPCColor;
 		ContinueButton = GetNode<Button>("ContinueButton");
@@ -91,9 +94,20 @@ public partial class CharacterCreation : Node2D
 			CharacterPortrait.Color = PPCColor;
 		}
 	}
+		public void _on_bq_button_toggled(bool button_pressed)
+	{
+		if (button_pressed)
+		{
+			// Change the character portrait to the BQ color
+			CharacterPortrait.Color = BQColor;
+		}
+	}
 	public void _on_continue_button_pressed()
 	{
 
 		GetTree().ChangeSceneToFile("res://Scenes/SelectLocation.tscn");
 	}
+
+
+
 }

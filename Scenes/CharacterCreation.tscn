@@ -127,11 +127,10 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 3
+current_tab = 0
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -301,6 +300,18 @@ offset_bottom = 155.0
 button_group = ExtResource("4_jv57k")
 text = "PPC"
 
+[node name="BQButton" type="CheckBox" parent="TabContainer/General/GeneralBox/PolitcalPartyControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.047
+offset_left = 601.837
+offset_top = 124.0
+offset_right = 724.833
+offset_bottom = 131.124
+button_group = ExtResource("4_jv57k")
+text = "Bloc Quebecois"
+
 [node name="AncestarySelect" type="OptionButton" parent="TabContainer/General/GeneralBox"]
 layout_mode = 1
 anchors_preset = -1
@@ -435,6 +446,7 @@ offset_right = 51.0
 offset_bottom = 44.0
 
 [node name="Policy" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
@@ -3237,6 +3249,7 @@ script = ExtResource("21_q3qxb")
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/CPCButton" to="." method="_on_cpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/GPCButton" to="." method="_on_gpc_button_toggled"]
 [connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton" to="." method="_on_ppc_button_toggled"]
+[connection signal="toggled" from="TabContainer/General/GeneralBox/PolitcalPartyControl/BQButton" to="TabContainer/General/GeneralBox" method="_on_bq_button_toggled"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryButton" to="TabContainer/History" method="_on_add_history_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/AddButton" to="TabContainer/History" method="_on_add_button_pressed"]
 [connection signal="pressed" from="TabContainer/History/AddHistoryPanel/ExitButton" to="TabContainer/History" method="_on_exit_button_pressed"]
