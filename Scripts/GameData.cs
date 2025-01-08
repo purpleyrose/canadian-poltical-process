@@ -13,28 +13,40 @@ public partial class GameData : Node
     public int PoliticalPoints { get; set; }
     public int InitialNameRecognition { get; set; }
     public List<HistoryEntry> History { get; set; } = new List<HistoryEntry>();
-    public int NetApproval { get; set; }
+    
+    public Dictionary<string, object> Policies { get; set; } = new Dictionary<string, object>();
+
     public string Province { get; set; }
     public string CensusDivision { get; set; }
 
     public void SaveToFile(string saveFileName)
     {
         string savePath = $"user://{saveFileName}.json";
-
+        
         // Create a save data object
         var saveData = new GameDataSave
         {
-            FirstName = this.FirstName,
-            LastName = this.LastName,
+            FirstName = this.FirstName ?? "Unknown",
+            LastName = this.LastName ?? "Unknown",
             Age = this.Age,
-            PoliticalParty = this.PoliticalParty,
+            PoliticalParty = this.PoliticalParty ?? "None",
             PoliticalPoints = this.PoliticalPoints,
             InitialNameRecognition = this.InitialNameRecognition,
             History = this.History,
-            NetApproval = this.NetApproval,
-            Province = this.Province,
-            CensusDivision = this.CensusDivision
+            Policies = this.Policies,
+            Province = this.Province ?? "Unknown Province", // Assign default
+            CensusDivision = this.CensusDivision ?? "Unknown Division" // Assign default
         };
+
+        GD.Print($"FirstName: {FirstName}");
+        GD.Print($"LastName: {LastName}");
+        GD.Print($"Age: {Age}");
+        GD.Print($"PoliticalParty: {PoliticalParty}");
+        GD.Print($"History: {(History != null ? "Exists" : "Null")}");
+        GD.Print($"Policies: {(Policies != null ? "Exists" : "Null")}");
+        GD.Print($"Province: {Province}");
+        GD.Print($"CensusDivision: {CensusDivision}");
+
 
         // Serialize the save data
         var options = new JsonSerializerOptions { WriteIndented = true };
@@ -42,6 +54,12 @@ public partial class GameData : Node
 
         // Write JSON to file
         using var file = FileAccess.Open(savePath, FileAccess.ModeFlags.Write);
+        if (file == null)
+        {
+            GD.PrintErr($"Failed to open file for writing: {savePath}");
+            return;
+        }
+
         file.StoreString(json);
 
         GD.Print($"Game saved to {savePath}");
@@ -78,7 +96,7 @@ public partial class GameData : Node
         PoliticalPoints = saveData.PoliticalPoints;
         InitialNameRecognition = saveData.InitialNameRecognition;
         History = saveData.History;
-        NetApproval = saveData.NetApproval;
+        
         Province = saveData.Province;
         CensusDivision = saveData.CensusDivision;
 
@@ -96,7 +114,7 @@ public class GameDataSave
     public int PoliticalPoints { get; set; }
     public int InitialNameRecognition { get; set; }
     public List<HistoryEntry> History { get; set; }
-    public int NetApproval { get; set; }
+    public Dictionary<string, object> Policies { get; set; }
     public string Province { get; set; }
     public string CensusDivision { get; set; }
 }

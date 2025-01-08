@@ -29,7 +29,7 @@ public partial class Main : Node2D
 		globalState.PoliticalParty = "Green Party";
 		globalState.PoliticalPoints = 100;
 		globalState.InitialNameRecognition = 50;
-		globalState.NetApproval = 75;
+		
 		globalState.Province = "Ontario";
 		globalState.CensusDivision = "Division A";
 

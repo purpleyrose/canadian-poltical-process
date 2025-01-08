@@ -952,7 +952,7 @@ public partial class PolicyScoreCalculator : Node
 		SuggestedPartyLabel.Text = "Suggested Party: " + SuggestedParty;
 	}
 
-	private Dictionary<string, object> GetCurrentPolicyState()
+	public Dictionary<string, object> GetCurrentPolicyState()
 	{
 		Dictionary<string, object> policyState = new Dictionary<string, object>();
 		foreach (Node node in GetTree().GetNodesInGroup("PolicyGroup"))

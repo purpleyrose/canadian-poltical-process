@@ -22,6 +22,8 @@ public partial class CharacterCreation : Node2D
 	private Panel Background;
 	private ColorRect CharacterPortrait;
 	private Button ContinueButton;
+	
+
 	private static Color RGBToColor(int red, int green, int blue, float alpha = 1.0f)
     {
         // Ensure the RGB values are in the valid range (0-255)
@@ -47,6 +49,8 @@ public partial class CharacterCreation : Node2D
 		PPCButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/PPCButton");
 		BQButton = GetNode<CheckBox>("TabContainer/General/GeneralBox/PolitcalPartyControl/BQButton");
 		Background = GetNode<Panel>("Background");
+
+
 		BQButton.Connect("toggled", new Callable(this, nameof(_on_bq_button_toggled)));
 		CharacterPortrait = GetNode<ColorRect>("Background/CharacterPortraitBG");
 		CharacterPortrait.Color = LPCColor;
@@ -102,10 +106,110 @@ public partial class CharacterCreation : Node2D
 			CharacterPortrait.Color = BQColor;
 		}
 	}
+	private List<HistoryEntry> getAllHistoryEntries()
+	{
+		var historyEntries = new List<HistoryEntry>();
+		var historyListBox = GetNode<VBoxContainer>("TabContainer/History/HistoryListBox");
+		foreach (var child in historyListBox.GetChildren())
+		{
+			var historyHBox = (HBoxContainer)child;
+			var historyTitle = ((Label)historyHBox.GetChildren()[0]).Text;
+			var historyYears = ((Label)historyHBox.GetChildren()[1]).Text;
+			var years = historyYears.Split('-');
+			var startYear = int.Parse(years[0].Trim());
+			var endYear = int.Parse(years[1].Trim());
+			var entry = new HistoryEntry
+			{
+				HistoryTitle = historyTitle,
+				StartYear = startYear,
+				EndYear = endYear
+			};
+			historyEntries.Add(entry);
+		}
+		return historyEntries;
+	}
+	public Dictionary<string, object> GetCurrentPolicyState()
+	{
+		Dictionary<string, object> policyState = new Dictionary<string, object>();
+		foreach (Node node in GetTree().GetNodesInGroup("PolicyGroup"))
+		{
+			if (node is CheckBox checkBox)
+			{
+				string PolicyName = checkBox.GetParent().GetParent().Name;
+				if (!policyState.ContainsKey(PolicyName))
+				{
+					if (checkBox.Text == "Yes" || checkBox.Text == "No")
+					{
+						policyState[PolicyName] = checkBox.ButtonPressed && checkBox.Text == "Yes";
+
+					}
+					else  // Maintain, Decrease & Increase Cases
+					{
+						if (checkBox.ButtonPressed)
+						{
+							policyState[PolicyName] = checkBox.Text;
+						}
+					}
+				}
+			}
+		}
+		GD.Print("Current Policy States: ");
+		foreach (var state in policyState)
+		{
+			GD.Print(state.Key + ": " + state.Value);
+		}
+		return policyState;
+	}
+
 	public void _on_continue_button_pressed()
 	{
+		var GlobalState = new GameData();
+		GlobalState.FirstName = GetNode<LineEdit>("TabContainer/General/GeneralBox/FirstName").Text;
+		GlobalState.LastName = GetNode<LineEdit>("TabContainer/General/GeneralBox/LastName").Text;
+		GlobalState.Age = (int)GetNode<HSlider>("TabContainer/General/GeneralBox/AgeSlider").Value;
+
+		GlobalState.PoliticalPoints = (int)GetNode<SpinBox>("TabContainer/Advanced/PolticalPoints").Value;
+		GlobalState.InitialNameRecognition = (int)GetNode<SpinBox>("TabContainer/Advanced/NameRecognitionSpinBox").Value;
+		GlobalState.History = getAllHistoryEntries();
+		GlobalState.Policies = GetCurrentPolicyState();
+		if (LPCButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "Liberal";
+		}
+		else if (CPCButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "Conservative";
+		}
+		else if (NDPButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "NDP";
+		}
+		else if (GPCButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "Green";
+		}
+		else if (PPCButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "PPC";
+		}
+		else if (BQButton.ButtonPressed)
+		{
+			GlobalState.PoliticalParty = "Bloc Quebecois";
+		}
+		if (GlobalState.FirstName == "" || GlobalState.LastName == "")
+		{
+			Label errorLabel = new Label();
+			errorLabel.Text = "Please enter a first and last name.";
+			Background.AddChild(errorLabel);
+
+			return;
+		}
+		GlobalState.SaveToFile($"{GetNode<LineEdit>("TabContainer/General/GeneralBox/FirstName").Text}_{GetNode<LineEdit>("TabContainer/General/GeneralBox/LastName").Text}_save");
 
 		GetTree().ChangeSceneToFile("res://Scenes/SelectLocation.tscn");
+
+		
+
 	}
 
 

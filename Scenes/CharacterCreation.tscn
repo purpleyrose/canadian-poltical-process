@@ -127,10 +127,11 @@ offset_left = 446.0
 offset_top = 28.0
 offset_right = 1316.0
 offset_bottom = 68.0
-current_tab = 0
+current_tab = 4
 clip_tabs = false
 
 [node name="General" type="Control" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -3144,7 +3145,6 @@ offset_bottom = 858.0
 text = "Nationalist"
 
 [node name="Advanced" type="Control" parent="TabContainer"]
-visible = false
 layout_mode = 2
 script = ExtResource("5_yhvtf")
 metadata/_tab_index = 4
@@ -3209,25 +3209,42 @@ popup/item_6/id = 6
 popup/item_7/text = "Prime Minister"
 popup/item_7/id = 7
 
+[node name="Label4" type="Label" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 321.0
+offset_right = 441.0
+offset_bottom = 344.0
+text = "Politcal Points: "
+horizontal_alignment = 1
+
 [node name="Label5" type="Label" parent="TabContainer/Advanced"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.046
 anchor_bottom = 2.556
-offset_left = 116.0
-offset_top = 359.0
-offset_right = 508.98
-offset_bottom = 358.996
+offset_left = 133.0
+offset_top = 435.0
+offset_right = 525.98
+offset_bottom = 434.996
 text = "Inital Name Recognition:"
 horizontal_alignment = 1
 
 [node name="NameRecognitionSpinBox" type="SpinBox" parent="TabContainer/Advanced"]
 layout_mode = 0
-offset_left = 269.0
-offset_top = 418.0
-offset_right = 397.0
-offset_bottom = 455.0
+offset_left = 272.0
+offset_top = 497.0
+offset_right = 400.0
+offset_bottom = 534.0
 max_value = 3.97424e+07
+
+[node name="PolticalPoints" type="SpinBox" parent="TabContainer/Advanced"]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 372.0
+offset_right = 376.063
+offset_bottom = 403.0
+max_value = 1e+07
 
 [node name="ContinueButton" type="Button" parent="."]
 offset_left = 772.0

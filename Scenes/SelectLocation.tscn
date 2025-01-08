@@ -1,3 +1,26 @@
-[gd_scene format=3 uid="uid://dk80b18w6qxpc"]
+[gd_scene load_steps=3 format=3 uid="uid://dk80b18w6qxpc"]
+
+[sub_resource type="Gradient" id="Gradient_2goi0"]
+offsets = PackedFloat32Array(0.997245, 1)
+colors = PackedColorArray(0.158472, 0.158472, 0.158472, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_spkks"]
+gradient = SubResource("Gradient_2goi0")
+width = 1
 
 [node name="SelectLocation" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 3068.0
+offset_bottom = 1574.0
+texture = SubResource("GradientTexture1D_spkks")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 497.0
+offset_top = 209.0
+offset_right = 1370.0
+offset_bottom = 1048.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(873, 20000)
+layout_mode = 2
